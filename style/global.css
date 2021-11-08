@@ -3,10 +3,21 @@
 @tailwind utilities;
 
 @layer components {
-  .transitions{
+  .transitions {
     @apply transition-all duration-500;
   }
   .statusTitle {
     @apply text-sm font-custom font-bold text-lightBlue md:text-base mb-2;
+  }
+
+  /* title */
+
+  .title {
+    @apply text-xl md:text-3xl font-extrabold;
+  }
+}
+@layer utilities {
+  .shadow {
+    box-shadow: 0px 30px 40px #e5e5e5;
   }
 }
