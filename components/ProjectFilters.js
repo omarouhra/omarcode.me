@@ -11,17 +11,17 @@ function ProjectFilters() {
     { id: 5, link: "Design" },
   ];
   return (
-    <div className="flex space-x- my-24">
+    <div className="flex space-x-4 lg:space-x-12 mt-12 lg:mt-24">
       {filter.map((filter) => (
-        <div key={filter.id} className="px-4 ">
+        <div key={filter.id}>
           <button
             onClick={() => {
               setIsActive(filter.id);
             }}
             className={
               isActive === filter.id
-                ? "font-semibold text-black  transition duration-200 "
-                : "font-semibold text-gray-300 transition duration-200"
+                ? "filter text-black  transitions "
+                : "filter text-gray-300 transitions"
             }
           >
             {filter.link}

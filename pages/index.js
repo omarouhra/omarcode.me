@@ -1,5 +1,7 @@
 import Head from "next/head";
+import CustomLink from "../components/CustomLink";
 import NavBar from "../components/NavBar";
+import Project from "../components/Project";
 import ProjectFilters from "../components/ProjectFilters";
 
 export default function Home() {
@@ -89,7 +91,6 @@ export default function Home() {
         </section>
 
         {/* Project Section */}
-
         <section className=" max-w-screen-xl mx-auto px-6 md:px-12  lg:px-24 mt-12">
           <h2 className="title">Recent Work </h2>
           <p className="text-sm  mt-6 lg:mt-12 leading-normal sm:w-4/5 md:w-3/5 md:text-base lg:leading-relaxed  text-gray-500 font-light ">
@@ -99,6 +100,37 @@ export default function Home() {
           </p>
 
           <ProjectFilters />
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-12 my-12 lg:my-20">
+            <Project />
+            <Project />
+          </div>
+        </section>
+
+        {/* Work Process Section */}
+
+        <section className=" max-w-screen-xl mx-auto px-6 md:px-12  lg:px-24 mt-12 flex flex-col space-y-12 lg:flex-row lg:space-y-0 lg:spacex12 lg:items-center lg:justify-between">
+          <div>
+            <p className="text-xs text-blue-500">
+              {" "}
+              Want to know what is like to work with me?{" "}
+            </p>
+            <h2 className="title">Its a mix of these things.</h2>
+          </div>
+
+          <div className="h-72 w-72 bg-blue-400 rounded-md lg:hover:shadow-2xl lg:transitions"></div>
+        </section>
+
+        {/* Instagram Section */}
+
+        <section className=" max-w-screen-xl mx-auto px-6 md:px-12  lg:px-24 mt-12 lg:my-24 flex flex-col space-y-12 lg:flex-row lg:space-y-0 lg:spacex12 lg:items-center lg:justify-between">
+          <div>
+            <h2 className="title">
+              I’m a lot cooler on <span className='font-extrabold text-transparent bg-clip-text bg-gradient-to-br from-pink-400 to-red-600'>Instagram</span>
+            </h2>
+            <CustomLink title="FOLLOW ME" />
+          </div>
+          <div className="h-72 w-72 bg-blue-400 rounded-md lg:hover:shadow-2xl lg:transitions"></div>
         </section>
       </main>
     </div>
