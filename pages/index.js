@@ -1,5 +1,6 @@
 import Head from "next/head";
 import CustomLink from "../components/CustomLink";
+import Footer from "../components/Footer";
 import NavBar from "../components/NavBar";
 import Project from "../components/Project";
 import ProjectFilters from "../components/ProjectFilters";
@@ -18,10 +19,12 @@ export default function Home() {
         />
       </Head>
       {/* Navbar */}
-      <NavBar />
-      <main className=" px-2 md:px-6 ">
+      <nav>
+        <NavBar />
+      </nav>
+      <main>
         {/* Hero section */}
-        <section className="max-w-screen-xl mx-auto flex flex-col   justify-center items-start h-[500px] lg:h-[700px]">
+        <section className="max-w-screen-xl mx-auto flex flex-col px-4 lg:px-12   justify-center items-start h-[500px] lg:h-[700px]">
           <h1 className=" text-xl md:text-3xl lg:text-5xl font-bold leading-loose md:w-4/5 lg:w-[70%] md:leading-normal lg:leading-normal">
             Hey There! I'm <span className="text-lightBlue">Omar</span> . Front
             End Developer & Digital Content Creator.
@@ -39,7 +42,7 @@ export default function Home() {
         </section>
 
         {/* status section */}
-        <section className=" max-w-screen-xl mx-auto flex flex-col space-y-12 lg:space-y-0 lg:flex-row lg:justify-between lg:space-x-6">
+        <section className=" max-w-screen-xl mx-auto flex flex-col px-4 lg:px-12  space-y-12 lg:space-y-0 lg:flex-row lg:justify-between lg:space-x-6">
           <div className="grid lg:grid-cols-3 space-y-12 lg:space-y-0  lg:space-x-12">
             <div>
               <p className="statusTitle">CURRENTLY</p>
@@ -67,7 +70,7 @@ export default function Home() {
 
         {/* Skills Section */}
 
-        <section className=" max-w-screen-xl mx-auto bg-gradient-to-b from-darkBlue to-black text-white py-40 px-6 md:px-12  lg:px-24 mt-12 rounded-md shadow lg:mt-0 lg:-translate-y-12 ">
+        <section className=" max-w-screen-xl mx-auto bg-gradient-to-b from-darkBlue to-black text-white py-40 px-6 md:px-12  lg:px-24 mt-12 lg:rounded-md shadow lg:mt-0 lg:-translate-y-12 ">
           <div className=" max-w-screen-xl mx-auto text-white rounded-md shadow-2xl ">
             <h2 className="title">My Skills</h2>
             <p className="text-sm font-light leading-normal my-8 md:text-base md:w-3/4">
@@ -91,7 +94,7 @@ export default function Home() {
         </section>
 
         {/* Project Section */}
-        <section className=" max-w-screen-xl mx-auto px-6 md:px-12  lg:px-24 mt-12">
+        <section className=" max-w-screen-xl mx-auto px-4  md:px-12  lg:px-24 mt-12">
           <h2 className="title">Recent Work </h2>
           <p className="text-sm  mt-6 lg:mt-12 leading-normal sm:w-4/5 md:w-3/5 md:text-base lg:leading-relaxed  text-gray-500 font-light ">
             I like to stay busy and always have a project in the works. Take a
@@ -123,16 +126,24 @@ export default function Home() {
 
         {/* Instagram Section */}
 
-        <section className=" max-w-screen-xl mx-auto px-6 md:px-12  lg:px-24 mt-12 lg:my-24 flex flex-col space-y-12 lg:flex-row lg:space-y-0 lg:spacex12 lg:items-center lg:justify-between">
+        <section className=" max-w-screen-xl mx-auto px-4 md:px-12  lg:px-24 mt-12 lg:my-24 flex flex-col space-y-12 lg:flex-row lg:space-y-0 lg:spacex12 lg:items-center lg:justify-between">
           <div>
             <h2 className="title">
-              I’m a lot cooler on <span className='font-extrabold text-transparent bg-clip-text bg-gradient-to-br from-pink-400 to-red-600'>Instagram</span>
+              I’m a lot cooler on{" "}
+              <span className="font-extrabold text-transparent bg-clip-text bg-gradient-to-br from-pink-400 to-red-600">
+                Instagram
+              </span>
             </h2>
             <CustomLink title="FOLLOW ME" />
           </div>
           <div className="h-72 w-72 bg-blue-400 rounded-md lg:hover:shadow-2xl lg:transitions"></div>
         </section>
       </main>
+
+      {/* Footer */}
+      <footer className=" max-w-screen-xl mx-auto px-4 md:px-12  lg:px-24 mt-12 lg:my-24 w-full">
+        <Footer />
+      </footer>
     </div>
   );
 }

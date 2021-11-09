@@ -1,6 +1,6 @@
 function NavBar() {
   return (
-    <div className='flex w-screen justify-between p-4  md:py-8  max-w-screen-xl mx-auto'>
+    <div className='flex w-full justify-between p-4   md:py-8  max-w-screen-xl mx-auto'>
       <img
         className='w-8 md:w-10'
         src={`${process.env.HOST}uploads/logo_40373f9c4b.png`}
