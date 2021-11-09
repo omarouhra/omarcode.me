@@ -43,7 +43,7 @@ export default function Home() {
 
         {/* status section */}
         <section className=" max-w-screen-xl mx-auto flex flex-col px-4 lg:px-12 mt-20 lg:mt-32 space-y-12 lg:space-y-0 lg:flex-row  lg:justify-between lg:space-x-6">
-          <div className="grid lg:grid-cols-3 space-y-12 lg:space-y-0  lg:space-x-12 max-w-4xl lg:pt-24 ">
+          <div className="grid lg:grid-cols-3 space-y-12 lg:space-y-0  mlgspace-x-4 max-w-4xl lg:pt-24 ">
             <div>
               <p className="statusTitle">CURRENTLY</p>
               <p className="text-sm font-light lg:w-2/3 ">
@@ -70,8 +70,8 @@ export default function Home() {
 
         {/* Skills Section */}
 
-        <section className=" max-w-screen-xl mx-auto bg-gradient-to-b from-darkBlue to-black text-white py-40 px-6 md:px-12  lg:px-24 mt-12 lg:rounded-md shadow lg:mt-0 lg:-translate-y-44 ">
-          <div className=" max-w-screen-xl mx-auto text-white rounded-md shadow-2xl ">
+        <section className=" max-w-screen-xl mx-auto bg-gradient-to-r from-darkBlue to-blue-800 text-white py-40 px-6 md:px-12  lg:px-24 mt-12 lg:rounded-md shadow lg:mt-0 lg:-translate-y-44 ">
+          <div className=" max-w-screen-xl mx-auto text-white rounded-md ">
             <h2 className="title">My Skills</h2>
             <p className="text-sm font-light leading-normal my-8 md:text-base md:w-3/4">
               As a developer, I am convinced that the way to be successful in
