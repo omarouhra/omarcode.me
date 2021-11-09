@@ -3,8 +3,11 @@ import Footer from "../components/Footer";
 import NavBar from "../components/NavBar";
 import Head from "next/head";
 import Project from "../components/Project";
+import { useState } from "react";
 
 function page() {
+  const [isOpen, setisOpen] = useState(1);
+
   return (
     <div>
       <Head>
@@ -63,8 +66,10 @@ function page() {
       </main>
 
       {/* Project Details Section */}
-      <section className="max-w-screen-xl mx-auto px-4  md:px-12  lg:px-24 lg:my-56 ">
-        
+      <section className="max-w-screen-xl mx-auto px-4  md:px-12  lg:px-24 lg:my-56 flex flex-col items-center space-y-12">
+        <div className="w-full bg-gradient-to-r from-darkBlue to-lightBlue text-white py-12 px-4">
+          <h2 className="title">What The Client Thinks</h2>
+        </div>
       </section>
 
       {/* Other Project Section */}
