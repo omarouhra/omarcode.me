@@ -1,17 +1,20 @@
 import Link from "next/link";
-function CustomLink({ title, important }) {
+function CustomLink({ title, link, icon, important }) {
   return (
-    <Link href="#">
-      <a
-        className={
-          important
-            ? "text-sm font-bold hover:text-blue-500 transitions "
-            : "text-xs font-bold hover:text-blue-500 transitions "
-        }
-      >
-        {title}
-        {">"}
-      </a>
+    <Link href={link}>
+      {title ? (
+        <a
+          className={
+            important
+              ? "text-sm font-bold hover:text-blue-500 transitions "
+              : "text-xs font-bold hover:text-blue-500 transitions "
+          }
+        >
+          {title} {">"}
+        </a>
+      ) : (
+        <a>{icon}</a>
+      )}
     </Link>
   );
 }

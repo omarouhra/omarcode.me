@@ -12,7 +12,7 @@ function Project() {
         An e-commerce application built with React & Shopify for a coffee
         roasting company
       </p>
-      <CustomLink title="VIEW PROJECT" />
+      <CustomLink title="VIEW PROJECT" link="/page" />
     </div>
   );
 }

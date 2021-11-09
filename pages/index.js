@@ -9,7 +9,7 @@ export default function Home() {
   return (
     <div className="flex flex-col h-screen bg-white font-custom">
       <Head>
-        <title>Create Next App</title>
+        <title>Omar Ouhra - Front End Developer </title>
         <link rel="icon" href="/favicon.ico" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -24,8 +24,8 @@ export default function Home() {
       </nav>
       <main>
         {/* Hero section */}
-        <section className="max-w-screen-xl mx-auto flex flex-col px-4 lg:px-12   justify-center items-start h-[500px] lg:h-[700px]">
-          <h1 className=" text-xl md:text-3xl lg:text-5xl font-bold leading-loose md:w-4/5 lg:w-[70%] md:leading-normal lg:leading-normal">
+        <section className="max-w-screen-xl mx-auto flex flex-col px-4 lg:px-12   justify-center items-start mt-36 lg:mt-40">
+          <h1 className=" text-xl md:text-3xl lg:text-5xl font-bold leading-loose md:w-4/5 lg:w-[80%] md:leading-normal lg:leading-normal">
             Hey There! I'm <span className="text-lightBlue">Omar</span> . Front
             End Developer & Digital Content Creator.
           </h1>
@@ -42,8 +42,8 @@ export default function Home() {
         </section>
 
         {/* status section */}
-        <section className=" max-w-screen-xl mx-auto flex flex-col px-4 lg:px-12  space-y-12 lg:space-y-0 lg:flex-row lg:justify-between lg:space-x-6">
-          <div className="grid lg:grid-cols-3 space-y-12 lg:space-y-0  lg:space-x-12">
+        <section className=" max-w-screen-xl mx-auto flex flex-col px-4 lg:px-12 mt-20 lg:mt-32 space-y-12 lg:space-y-0 lg:flex-row  lg:justify-between lg:space-x-6">
+          <div className="grid lg:grid-cols-3 space-y-12 lg:space-y-0  lg:space-x-12 max-w-4xl lg:pt-24 ">
             <div>
               <p className="statusTitle">CURRENTLY</p>
               <p className="text-sm font-light lg:w-2/3 ">
@@ -64,13 +64,13 @@ export default function Home() {
           <img
             src="http://localhost:1337/uploads/IMG_7549_2_c49750688e.JPG"
             alt="hero image"
-            className="rounded-md w-[400px] lg:h-[650px] lg:hover:shadow-2xl  transitions z-40"
+            className="rounded-md w-[400px] lg:h-[650px] lg:hover:shadow-2xl   transitions z-40"
           />
         </section>
 
         {/* Skills Section */}
 
-        <section className=" max-w-screen-xl mx-auto bg-gradient-to-b from-darkBlue to-black text-white py-40 px-6 md:px-12  lg:px-24 mt-12 lg:rounded-md shadow lg:mt-0 lg:-translate-y-12 ">
+        <section className=" max-w-screen-xl mx-auto bg-gradient-to-b from-darkBlue to-black text-white py-40 px-6 md:px-12  lg:px-24 mt-12 lg:rounded-md shadow lg:mt-0 lg:-translate-y-44 ">
           <div className=" max-w-screen-xl mx-auto text-white rounded-md shadow-2xl ">
             <h2 className="title">My Skills</h2>
             <p className="text-sm font-light leading-normal my-8 md:text-base md:w-3/4">
@@ -112,7 +112,7 @@ export default function Home() {
 
         {/* Work Process Section */}
 
-        <section className=" max-w-screen-xl mx-auto px-6 md:px-12  lg:px-24 mt-12 flex flex-col space-y-12 lg:flex-row lg:space-y-0 lg:spacex12 lg:items-center lg:justify-between">
+        <section className=" max-w-screen-xl mx-auto px-6 md:px-12  lg:px-24 my-12 lg:my-44 flex flex-col space-y-12 lg:flex-row lg:space-y-0 lg:spacex12 lg:items-center lg:justify-between">
           <div>
             <p className="text-xs text-blue-500">
               {" "}
@@ -126,7 +126,7 @@ export default function Home() {
 
         {/* Instagram Section */}
 
-        <section className=" max-w-screen-xl mx-auto px-4 md:px-12  lg:px-24 mt-12 lg:my-24 flex flex-col space-y-12 lg:flex-row lg:space-y-0 lg:spacex12 lg:items-center lg:justify-between">
+        <section className=" max-w-screen-xl mx-auto px-4 md:px-12  lg:px-24 mt-12 lg:my-44 flex flex-col space-y-12 lg:flex-row lg:space-y-0 lg:spacex12 lg:items-center lg:justify-between">
           <div>
             <h2 className="title">
               I’m a lot cooler on{" "}
@@ -134,7 +134,10 @@ export default function Home() {
                 Instagram
               </span>
             </h2>
-            <CustomLink title="FOLLOW ME" />
+            <CustomLink
+              title="FOLLOW ME"
+              link="https:www.instagram.com/omar.code"
+            />
           </div>
           <div className="h-72 w-72 bg-blue-400 rounded-md lg:hover:shadow-2xl lg:transitions"></div>
         </section>

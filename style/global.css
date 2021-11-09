@@ -7,13 +7,16 @@
     @apply transition-all duration-200;
   }
   .statusTitle {
-    @apply text-sm font-custom font-bold text-lightBlue md:text-base mb-2;
+    @apply text-sm font-custom font-bold text-lightBlue md:text-base mb-4;
   }
 
   /* title */
 
   .title {
-    @apply text-xl md:text-3xl font-extrabold;
+    @apply text-xl md:text-3xl font-bold;
+  }
+  .big-title {
+    @apply text-2xl md:text-3xl lg:text-5xl font-semibold tracking-widest;
   }
 
   /* filter button */
