@@ -6,13 +6,16 @@ import Project from "../components/Project";
 import { useState } from "react";
 import axios from "axios";
 
-function page({ Projects, Project, Categories }) {
+function page({ projects, project }) {
   const [isOpen, setisOpen] = useState(1);
 
+  const otherPosts = projects.filter(
+    article => article.id != project.id && article.type.id === project.type.id
+  );
   return (
     <div>
       <Head>
-        <title>{Project.title} page</title>
+        <title>{project.title} page</title>
         <link rel='icon' href='/favicon.ico' />
         <link rel='preconnect' href='https://fonts.googleapis.com' />
         <link rel='preconnect' href='https://fonts.gstatic.com' crossorigin />
@@ -28,9 +31,9 @@ function page({ Projects, Project, Categories }) {
         <section className='max-w-screen-xl mx-auto flex flex-col px-4 lg:px-12   justify-center items-start mt-20 lg:mt-32'>
           <CustomLink link='/' title='←' big />
 
-          <h2 className='big-title mt-4 lg:mt-12'>{Project.title}</h2>
+          <h2 className='big-title mt-4 lg:mt-12'>{project.title}</h2>
           <p className=' text-sm  mt-12 leading-loose lg:leading-loose sm:w-4/5 md:w-4/5 md:text-base  text-gray-500 font-light '>
-            {Project.description}
+            {project.description}
           </p>
         </section>
 
@@ -40,7 +43,7 @@ function page({ Projects, Project, Categories }) {
           <div>
             <p className='statusTitle'>TYPE</p>
             <p className='text-base font-light lg:w-2/3 '>
-              {Project.type.title}
+              {project.type.title}
             </p>
           </div>
           <div>
@@ -63,10 +66,10 @@ function page({ Projects, Project, Categories }) {
 
         <section className='max-w-screen-xl mx-auto flex justify-center my-24'>
           <div className='w-[800px] h-[1000px]'>
-            {Project.preview ? (
+            {project.preview ? (
               <img
-                src={`http://localhost:1337${Project.preview.url}`}
-                alt={Project.preview.name}
+                src={`http://localhost:1337${project.preview.url}`}
+                alt={project.preview.name}
               />
             ) : null}
           </div>
@@ -84,8 +87,19 @@ function page({ Projects, Project, Categories }) {
         <section className='max-w-screen-xl mx-auto px-4  md:px-12  lg:px-24 lg:my-56 '>
           <h2 className='title'>Other projects</h2>
           <div className='grid grid-cols-1 md:grid-cols-2 gap-12 my-12 lg:my-20'>
-            {/* <Project /> */}
-            {/* <Project /> */}
+            {otherPosts.map(project => (
+              <Project
+                image={
+                  project.image
+                    ? `http://localhost:1337${project.image.url}`
+                    : null
+                }
+                imageAlt={project.image ? project.image.name : null}
+                title={project.title}
+                description={project.description}
+                link={`/${project.id}`}
+              />
+            ))}
           </div>
         </section>
       </main>
@@ -105,13 +119,11 @@ export async function getServerSideProps(context) {
   const { id } = params;
   const post = await axios.get(`http://localhost:1337/posts/${id}`);
   const posts = await axios.get("http://localhost:1337/posts");
-  const categories = await axios.get("http://localhost:1337/types");
 
   return {
     props: {
-      Project: post.data,
-      Projects: posts.data,
-      Categories: categories.data,
+      project: post.data,
+      projects: posts.data,
     },
   };
 }
