@@ -5,11 +5,8 @@ function CustomLink({ title, link, icon, important }) {
       {title ? (
         <a
           className={
-            important
-              ? "text-sm font-bold hover:text-blue-500 transitions "
-              : "text-xs font-bold hover:text-blue-500 transitions "
-          }
-        >
+            important ? "text-sm custom-link " : "text-xs custom-link"
+          }>
           {title} {">"}
         </a>
       ) : (
