@@ -7,7 +7,8 @@ import ProjectFilters from "../components/ProjectFilters";
 import axios from "axios";
 
 export default function Home({ Projects }) {
-  console.log(Projects);
+  console.log(Projects[0].image.url);
+
   return (
     <div className='flex flex-col h-screen bg-white font-custom'>
       <Head>
@@ -107,8 +108,15 @@ export default function Home({ Projects }) {
           <ProjectFilters />
 
           <div className='grid grid-cols-1 md:grid-cols-2 gap-12 my-12 lg:my-20'>
-            <Project />
-            <Project />
+            {Projects.map(project => (
+              <Project
+                key={project.id}
+                image={`http://localhost:1337${project.image.url}`}
+                imageAlt={project.image.name}
+                title={project.title}
+                description={project.description}
+              />
+            ))}
           </div>
         </section>
 
