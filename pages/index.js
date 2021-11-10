@@ -146,6 +146,7 @@ export default function Home({ Projects, Categories }) {
                     imageAlt={project.image ? project.image.name : null}
                     title={project.title}
                     description={project.description}
+                    link={`/${project.id}`}
                   />
                 </motion.div>
               ) : null

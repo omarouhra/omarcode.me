@@ -16,7 +16,7 @@
     @apply text-xl md:text-3xl font-bold;
   }
   .big-title {
-    @apply text-2xl md:text-3xl lg:text-5xl font-semibold tracking-widest;
+    @apply text-2xl md:text-3xl lg:text-5xl font-semibold uppercase tracking-widest;
   }
 
   /* filter button */
