@@ -156,7 +156,7 @@ export default function Home({ Projects, Categories }) {
 
         {/* Work Process Section */}
 
-        <section className=' max-w-screen-xl mx-auto px-6 md:px-12  lg:px-24 my-12 lg:my-44 flex flex-col space-y-12 lg:flex-row lg:space-y-0 lg:spacex12 lg:items-center lg:justify-between'>
+        <section className=' max-w-screen-xl mx-auto px-6 md:px-12  lg:px-24 my-12 lg:my-44 flex flex-col space-y-12 lg:flex-row lg:space-y-0  lg:items-center lg:justify-between'>
           <div>
             <p className='text-xs text-blue-500'>
               {" "}
@@ -165,7 +165,11 @@ export default function Home({ Projects, Categories }) {
             <h2 className='title'>Its a mix of these things.</h2>
           </div>
 
-          <div className='h-72 w-72 bg-blue-400 rounded-md lg:hover:shadow-2xl lg:transitions'></div>
+          <img
+            src='http://localhost:1337/uploads/process_00fbc4eb3c.gif'
+            alt='hero image'
+            className='lg:w-1/2'
+          />
         </section>
 
         {/* Instagram Section */}
@@ -183,7 +187,11 @@ export default function Home({ Projects, Categories }) {
               link='https:www.instagram.com/omar.code'
             />
           </div>
-          <div className='h-72 w-72 bg-blue-400 rounded-md lg:hover:shadow-2xl lg:transitions'></div>
+          <img
+            src='http://localhost:1337/uploads/insta_ad028358cd.png'
+            alt='hero image'
+            className='w-2/3 lg:w-1/2'
+          />
         </section>
       </main>
 
