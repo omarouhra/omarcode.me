@@ -33,7 +33,7 @@ function page({ projects, project }) {
 
           <h2 className='big-title mt-4 lg:mt-12'>{project.title}</h2>
           <p className=' text-sm  mt-12 leading-loose lg:leading-loose sm:w-4/5 md:w-4/5 md:text-base  text-gray-500 font-light '>
-            {project.description}
+            {project.content}
           </p>
         </section>
 
