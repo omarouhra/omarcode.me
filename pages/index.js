@@ -3,11 +3,12 @@ import CustomLink from "../components/CustomLink";
 import Footer from "../components/Footer";
 import NavBar from "../components/NavBar";
 import Project from "../components/Project";
-import ProjectFilters from "../components/ProjectFilters";
 import axios from "axios";
+import { useState } from "react";
 
-export default function Home({ Projects }) {
+export default function Home({ Projects, Categories }) {
   console.log(Projects[0].image.url);
+  const [isActive, setIsActive] = useState(4);
 
   return (
     <div className='flex flex-col h-screen bg-white font-custom'>
@@ -104,8 +105,23 @@ export default function Home({ Projects }) {
             look at some of the applications, articles, and companies I've
             dedicated my time to.
           </p>
-
-          <ProjectFilters />
+          <div className='flex space-x-4 lg:space-x-12 mt-12 lg:mt-24'>
+            {Categories.map(filter => (
+              <div key={filter.id}>
+                <button
+                  onClick={() => {
+                    setIsActive(filter.id);
+                  }}
+                  className={
+                    isActive === filter.id
+                      ? "filter text-black  transitions "
+                      : "filter text-gray-300 transitions"
+                  }>
+                  {filter.title}
+                </button>
+              </div>
+            ))}
+          </div>
 
           <div className='grid grid-cols-1 md:grid-cols-2 gap-12 my-12 lg:my-20'>
             {Projects.map(project => (
@@ -163,12 +179,12 @@ export default function Home({ Projects }) {
 
 export async function getServerSideProps() {
   const posts = await axios.get("http://localhost:1337/posts");
-  // const categories = await axios.get("http://localhost:1337/categories");
+  const categories = await axios.get("http://localhost:1337/types");
 
   return {
     props: {
       Projects: posts.data,
-      // Type: Type.data,
+      Categories: categories.data,
     },
   };
 }
