@@ -26,10 +26,9 @@ function page({ Projects, Project, Categories }) {
       <main>
         {/* Project Hero */}
         <section className='max-w-screen-xl mx-auto flex flex-col px-4 lg:px-12   justify-center items-start mt-20 lg:mt-32'>
-          <a href='/' className='text-4xl  text-blue-500 mb-4 lg:mb-12  hover:text-blue-800 transitions '>
-            ← 
-          </a>
-          <h2 className='big-title'>{Project.title}</h2>
+          <CustomLink link='/' title='←' big />
+
+          <h2 className='big-title mt-4 lg:mt-12'>{Project.title}</h2>
           <p className=' text-sm  mt-12 leading-loose lg:leading-loose sm:w-4/5 md:w-4/5 md:text-base  text-gray-500 font-light '>
             {Project.description}
           </p>
