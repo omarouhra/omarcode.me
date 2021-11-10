@@ -9,7 +9,7 @@ import { useState } from "react";
 export default function Home({ Projects, Categories }) {
   console.log(Projects[0]);
   const [isActive, setIsActive] = useState(4);
-
+  
   return (
     <div className='flex flex-col h-screen bg-white font-custom'>
       <Head>
@@ -128,8 +128,12 @@ export default function Home({ Projects, Categories }) {
               project.type.id === isActive ? (
                 <Project
                   key={project.id}
-                  image={`http://localhost:1337${project.image.url}`}
-                  imageAlt={project.image.name}
+                  image={
+                    project.image
+                      ? `http://localhost:1337${project.image.url}`
+                      : null
+                  }
+                  imageAlt={project.image ? project.image.name : null}
                   title={project.title}
                   description={project.description}
                 />
