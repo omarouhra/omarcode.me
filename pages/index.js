@@ -4,8 +4,10 @@ import Footer from "../components/Footer";
 import NavBar from "../components/NavBar";
 import Project from "../components/Project";
 import ProjectFilters from "../components/ProjectFilters";
+import axios from "axios";
 
-export default function Home({}) {
+export default function Home({ Projects }) {
+  console.log(Projects);
   return (
     <div className='flex flex-col h-screen bg-white font-custom'>
       <Head>
@@ -152,13 +154,13 @@ export default function Home({}) {
 }
 
 export async function getServerSideProps() {
-  const posts = await axios.get("http://localhost:1337/projects");
-  const categories = await axios.get("http://localhost:1337/categories");
+  const posts = await axios.get("http://localhost:1337/posts");
+  // const categories = await axios.get("http://localhost:1337/categories");
 
   return {
     props: {
-      Projects: projects.data,
-      Type: Type.data,
+      Projects: posts.data,
+      // Type: Type.data,
     },
   };
 }
