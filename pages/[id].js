@@ -9,7 +9,6 @@ import axios from "axios";
 function page({ Projects, Project, Categories }) {
   const [isOpen, setisOpen] = useState(1);
 
-
   return (
     <div>
       <Head>
@@ -26,7 +25,10 @@ function page({ Projects, Project, Categories }) {
 
       <main>
         {/* Project Hero */}
-        <section className='max-w-screen-xl mx-auto flex flex-col px-4 lg:px-12   justify-center items-start mt-36 lg:mt-40'>
+        <section className='max-w-screen-xl mx-auto flex flex-col px-4 lg:px-12   justify-center items-start mt-20 lg:mt-32'>
+          <a href='/' className='text-4xl  text-blue-500 mb-4 lg:mb-12  hover:text-blue-800 transitions '>
+            ← 
+          </a>
           <h2 className='big-title'>{Project.title}</h2>
           <p className=' text-sm  mt-12 leading-loose lg:leading-loose sm:w-4/5 md:w-4/5 md:text-base  text-gray-500 font-light '>
             {Project.description}
@@ -62,27 +64,32 @@ function page({ Projects, Project, Categories }) {
 
         <section className='max-w-screen-xl mx-auto flex justify-center my-24'>
           <div className='w-[800px] h-[1000px]'>
-            <img src={Project.preview.url} alt={Project.preview.name} />
+            {Project.preview ? (
+              <img
+                src={`http://localhost:1337${Project.preview.url}`}
+                alt={Project.preview.name}
+              />
+            ) : null}
+          </div>
+        </section>
+
+        {/* Project Details Section */}
+        <section className='max-w-screen-xl mx-auto px-4  md:px-12  lg:px-24 lg:my-56 flex flex-col items-center space-y-12'>
+          <div className='w-full bg-gradient-to-r from-darkBlue to-lightBlue text-white py-12 px-4'>
+            <h2 className='title'>What The Client Thinks</h2>
+          </div>
+        </section>
+
+        {/* Other Project Section */}
+
+        <section className='max-w-screen-xl mx-auto px-4  md:px-12  lg:px-24 lg:my-56 '>
+          <h2 className='title'>Other projects</h2>
+          <div className='grid grid-cols-1 md:grid-cols-2 gap-12 my-12 lg:my-20'>
+            {/* <Project /> */}
+            {/* <Project /> */}
           </div>
         </section>
       </main>
-
-      {/* Project Details Section */}
-      <section className='max-w-screen-xl mx-auto px-4  md:px-12  lg:px-24 lg:my-56 flex flex-col items-center space-y-12'>
-        <div className='w-full bg-gradient-to-r from-darkBlue to-lightBlue text-white py-12 px-4'>
-          <h2 className='title'>What The Client Thinks</h2>
-        </div>
-      </section>
-
-      {/* Other Project Section */}
-
-      <section className='max-w-screen-xl mx-auto px-4  md:px-12  lg:px-24 lg:my-56 '>
-        <h2 className='title'>Other projects</h2>
-        <div className='grid grid-cols-1 md:grid-cols-2 gap-12 my-12 lg:my-20'>
-          {/* <Project /> */}
-          {/* <Project /> */}
-        </div>
-      </section>
 
       {/* Footer */}
       <footer className=' max-w-screen-xl mx-auto px-4 md:px-12  lg:px-24 mt-12 lg:mt-24 w-full'>
