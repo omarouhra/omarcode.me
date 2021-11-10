@@ -4,7 +4,7 @@
 
 @layer components {
   .transitions {
-    @apply transition-all duration-200;
+    @apply transition-all duration-300;
   }
   .statusTitle {
     @apply text-sm font-custom font-bold text-lightBlue md:text-base mb-4;

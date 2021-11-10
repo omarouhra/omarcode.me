@@ -3,7 +3,7 @@ import CustomLink from "./CustomLink";
 function Project({ image, imageAlt, title, description }) {
   return (
     <div>
-      <div className='max-w-sm  rounded-md lg:hover:shadow-lg lg:transitions'>
+      <div className='max-w-sm  rounded-lg lg:hover:shadow-lg lg:transitions'>
         <img src={image} alt={imageAlt} />
       </div>
 

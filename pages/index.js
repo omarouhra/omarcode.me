@@ -7,7 +7,7 @@ import axios from "axios";
 import { useState } from "react";
 
 export default function Home({ Projects, Categories }) {
-  console.log(Projects[0].image.url);
+  console.log(Projects[0]);
   const [isActive, setIsActive] = useState(4);
 
   return (
@@ -124,15 +124,17 @@ export default function Home({ Projects, Categories }) {
           </div>
 
           <div className='grid grid-cols-1 md:grid-cols-2 gap-12 my-12 lg:my-20'>
-            {Projects.map(project => (
-              <Project
-                key={project.id}
-                image={`http://localhost:1337${project.image.url}`}
-                imageAlt={project.image.name}
-                title={project.title}
-                description={project.description}
-              />
-            ))}
+            {Projects.map(project =>
+              project.type.id === isActive ? (
+                <Project
+                  key={project.id}
+                  image={`http://localhost:1337${project.image.url}`}
+                  imageAlt={project.image.name}
+                  title={project.title}
+                  description={project.description}
+                />
+              ) : null
+            )}
           </div>
         </section>
 
