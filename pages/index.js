@@ -5,11 +5,14 @@ import NavBar from "../components/NavBar";
 import Project from "../components/Project";
 import axios from "axios";
 import { useState } from "react";
+import { motion } from "framer-motion";
 
 export default function Home({ Projects, Categories }) {
   console.log(Projects[0]);
   const [isActive, setIsActive] = useState(4);
-  
+
+  const transition = { duration: 0.7, ease: [0.4, 0.13, 0.23, 0.9] };
+
   return (
     <div className='flex flex-col h-screen bg-white font-custom'>
       <Head>
@@ -126,17 +129,25 @@ export default function Home({ Projects, Categories }) {
           <div className='grid grid-cols-1 md:grid-cols-2 gap-12 my-12 lg:my-20'>
             {Projects.map(project =>
               project.type.id === isActive ? (
-                <Project
+                <motion.div
                   key={project.id}
-                  image={
-                    project.image
-                      ? `http://localhost:1337${project.image.url}`
-                      : null
-                  }
-                  imageAlt={project.image ? project.image.name : null}
-                  title={project.title}
-                  description={project.description}
-                />
+                  initial={{ opacity: 0, y: 20 }}
+                  animate={{
+                    opacity: 1,
+                    y: 0,
+                    transition: transition,
+                  }}>
+                  <Project
+                    image={
+                      project.image
+                        ? `http://localhost:1337${project.image.url}`
+                        : null
+                    }
+                    imageAlt={project.image ? project.image.name : null}
+                    title={project.title}
+                    description={project.description}
+                  />
+                </motion.div>
               ) : null
             )}
           </div>
