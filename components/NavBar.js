@@ -2,7 +2,7 @@ import CustomLink from "./CustomLink";
 
 function NavBar() {
   return (
-    <div className='flex w-full justify-between p-4   md:py-8 md:mt-8  max-w-screen-xl mx-auto'>
+    <div className='flex w-full justify-between p-4  mt-12  md:py-8  max-w-screen-xl mx-auto'>
       <CustomLink
         link='/'
         icon={
