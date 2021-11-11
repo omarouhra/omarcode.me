@@ -26,10 +26,10 @@
 
   /* project infos */
   .info-container-active {
-    @apply w-full  px-4 lg:px-12 bg-gradient-to-r rounded-lg from-darkBlue to-blue-500 text-white py-4 lg:py-8 transitions;
+    @apply w-full  px-4 lg:px-12 bg-gradient-to-r cursor-pointer rounded-lg from-darkBlue to-blue-500 text-white py-4 lg:py-8 transitions;
   }
   .info-container {
-    @apply w-full  px-4 lg:px-12  py-4 transitions;
+    @apply w-full  px-4 lg:px-12 rounded-lg cursor-pointer  py-4 transitions;
   }
 
   /* Custom Link */

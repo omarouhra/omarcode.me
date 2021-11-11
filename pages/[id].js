@@ -76,7 +76,7 @@ function page({ projects, project }) {
         {/* Project image  */}
 
         <section className='max-w-screen-xl mx-auto flex justify-center my-24 px-4'>
-          <div className='w-[800px] h-[1000px]'>
+          <div className='w-[800px] '>
             {project.preview ? (
               <img
                 src={`http://localhost:1337${project.preview.url}`}
@@ -87,9 +87,9 @@ function page({ projects, project }) {
         </section>
 
         {/* Project Details Section */}
-        <section className='max-w-screen-lg mx-auto px-4  md:px-12  lg:px-24 lg:my-56 space-y-12'>
+        <section className='max-w-screen-lg mx-auto px-4 my-12 md:px-12  lg:px-24 lg:my-56 space-y-12 lg:space-y-24'>
 
-          
+
           {/* Client review */}
           <div
             onClick={() => setIsOpen(1)}
@@ -97,7 +97,7 @@ function page({ projects, project }) {
               isOpen === 1 ? "info-container-active " : "info-container"
             }>
             <div className='flex items-center justify-between'>
-              <h2 className='title'>What The Client Thinks</h2>
+              <h2 className='font-semibold uppercase text-lg'>What The Client Thinks</h2>
               <img
                 className={
                   isOpen === 1
@@ -128,7 +128,7 @@ function page({ projects, project }) {
               isOpen === 2 ? "info-container-active " : "info-container"
             }>
             <div className='flex items-center justify-between'>
-              <h2 className='title'>Project's Goal</h2>
+              <h2 className='font-semibold uppercase text-lg'>Project's Goal</h2>
               <img
                 className={
                   isOpen === 2
@@ -156,7 +156,7 @@ function page({ projects, project }) {
               isOpen === 3 ? "info-container-active " : "info-container"
             }>
             <div className='flex items-center justify-between'>
-              <h2 className='title'>Toolset</h2>
+              <h2 className='font-semibold uppercase text-lg'>Toolset</h2>
               <img
                 className={
                   isOpen === 3
@@ -173,7 +173,7 @@ function page({ projects, project }) {
                 isOpen === 3 ? "inline transitions " : "hidden transitions"
               }>
               <p className=' text-xs  mt-4  leading-loose lg:leading-loose max-w-2xl md:text-base  text-gray-50 font-light '>
-                {project.review}
+                {project.toolset}
               </p>
             </div>
           </div>
@@ -185,7 +185,7 @@ function page({ projects, project }) {
               isOpen === 4 ? "info-container-active " : "info-container"
             }>
             <div className='flex items-center justify-between'>
-              <h2 className='title'>Challenges</h2>
+              <h2 className='font-semibold uppercase text-lg'>Challenges</h2>
               <img
                 className={
                   isOpen === 4
@@ -201,7 +201,7 @@ function page({ projects, project }) {
                 isOpen === 4 ? "inline transitions " : "hidden transitions"
               }>
               <p className=' text-xs  mt-4  leading-loose lg:leading-loose max-w-2xl md:text-base  text-gray-50 font-light '>
-                {project.review}
+                {project.challenges}
               </p>
             </div>
           </div>
@@ -209,7 +209,7 @@ function page({ projects, project }) {
 
         {/* Other Project Section */}
 
-        <section className='max-w-screen-xl mx-auto px-4  md:px-12  lg:px-24 lg:my-56 '>
+        <section className='max-w-screen-xl mx-auto px-4 mt-32  md:px-12  lg:px-24 lg:my-56 '>
           <h2 className='title'>Other projects</h2>
           <div className='grid grid-cols-1 md:grid-cols-2 gap-12 my-12 lg:my-20'>
             {otherPosts.map(project => (
@@ -230,7 +230,7 @@ function page({ projects, project }) {
       </main>
 
       {/* Footer */}
-      <footer className=' max-w-screen-xl mx-auto px-4 md:px-12  lg:px-24 mt-12 lg:mt-24 w-full'>
+      <footer className=' max-w-screen-xl mx-auto px-4 md:px-12 mt-24  lg:px-24  lg:mt-24 w-full'>
         <Footer />
       </footer>
     </motion.div>
