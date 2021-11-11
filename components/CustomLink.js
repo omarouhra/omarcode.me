@@ -1,9 +1,11 @@
 import Link from "next/link";
-function CustomLink({ title, link, icon, important, big }) {
+function CustomLink({ title, link, icon, important, big, newTab }) {
   return (
     <Link href={link}>
       {title ? (
         <a
+          title={title}
+          target={newTab ? "_blank" : null}
           className={
             important
               ? "text-sm custom-link "
