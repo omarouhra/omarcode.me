@@ -5,7 +5,7 @@ function CustomLink({ title, link, icon, important, big, newTab }) {
       {title ? (
         <a
           title={title}
-          target={newTab ? "_blank" : null}
+          target={newTab ? "_blank" : "_self"}
           className={
             important
               ? "text-sm custom-link "
