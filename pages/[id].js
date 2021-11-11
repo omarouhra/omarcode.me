@@ -59,7 +59,7 @@ function page({ projects, project }) {
           <div>
             <p className='statusTitle'>LIVE</p>
             <CustomLink
-              link={project.live}
+              link={project?.live}
               title='View Site'
               important
               newTab
@@ -80,7 +80,7 @@ function page({ projects, project }) {
             {project.preview ? (
               <img
                 src={`http://localhost:1337${project.preview.url}`}
-                alt={project.preview.name}
+                alt={project?.preview.name}
               />
             ) : null}
           </div>
@@ -88,8 +88,6 @@ function page({ projects, project }) {
 
         {/* Project Details Section */}
         <section className='max-w-screen-lg mx-auto px-4 my-12 md:px-12  lg:px-24 lg:my-56 space-y-12 lg:space-y-24'>
-
-
           {/* Client review */}
           <div
             onClick={() => setIsOpen(1)}
@@ -97,7 +95,9 @@ function page({ projects, project }) {
               isOpen === 1 ? "info-container-active " : "info-container"
             }>
             <div className='flex items-center justify-between'>
-              <h2 className='font-semibold uppercase text-lg'>What The Client Thinks</h2>
+              <h2 className='font-semibold uppercase text-lg'>
+                What The Client Thinks
+              </h2>
               <img
                 className={
                   isOpen === 1
@@ -128,7 +128,9 @@ function page({ projects, project }) {
               isOpen === 2 ? "info-container-active " : "info-container"
             }>
             <div className='flex items-center justify-between'>
-              <h2 className='font-semibold uppercase text-lg'>Project's Goal</h2>
+              <h2 className='font-semibold uppercase text-lg'>
+                Project's Goal
+              </h2>
               <img
                 className={
                   isOpen === 2
