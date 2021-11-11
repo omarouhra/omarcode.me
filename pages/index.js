@@ -185,6 +185,7 @@ export default function Home({ Projects, Categories }) {
             <CustomLink
               title='FOLLOW ME'
               link='https:www.instagram.com/omar.code'
+              newTab
             />
           </div>
           <img
