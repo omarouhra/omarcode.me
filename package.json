@@ -10,7 +10,8 @@
     "framer-motion": "^5.2.1",
     "next": "latest",
     "react": "^17.0.2",
-    "react-dom": "^17.0.2"
+    "react-dom": "^17.0.2",
+    "react-richtext": "^1.1.0"
   },
   "devDependencies": {
     "autoprefixer": "^10.2.6",

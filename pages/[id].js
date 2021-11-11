@@ -12,21 +12,13 @@ function page({ projects, project }) {
 
   const transition = { duration: 0.7, ease: [0.4, 0.13, 0.23, 0.9] };
 
-
-  const items = [
-    { title: "What the client thinks" },
-    { title: "Web Stack and Explanation" },
-    { title: "Problems and Thought Process" },
-    { title: "Lessons Learned" },
-  ];
-
   const otherPosts = projects.filter(
     article => article.id != project.id && article.type.id === project.type.id
   );
   return (
     <motion.div
       initial={{ opacity: 0 }}
-      animate={{ opacity: 1 ,transition : transition }}
+      animate={{ opacity: 1, transition: transition }}
       exit={{ opacity: 0 }}>
       <Head>
         <title>{project.title} page</title>
@@ -55,25 +47,25 @@ function page({ projects, project }) {
 
         <section className='max-w-screen-xl mx-auto px-4 lg:px-12 mt-24 grid lg:grid-cols-4 space-y-12 lg:space-y-0  lg:space-x-6 '>
           <div>
-            <p className='statusTitle'>TYPE</p>
-            <p className='text-base font-light lg:w-2/3 '>
-              {project.type.title}
-            </p>
+            <p className='statusTitle'>ROLE</p>
+            <p className='text-base font-light lg:w-2/3 '>{project.role}</p>
           </div>
           <div>
             <p className='statusTitle'>DEV STACK</p>
             <ul className='text-base  font-light lg:w-2/3'>
-              Html, CSS, Javascript
+              {/* <RichTextEditor value={project.devStack} /> */}
             </ul>
           </div>
           <div>
             <p className='statusTitle'>LIVE</p>
-            <CustomLink link='#' title='View Site' important />
+            <CustomLink link={project.live} title='View Site' important newTab />
           </div>
-          <div>
-            <p className='statusTitle'>CODE</p>
-            <CustomLink link='#' title='Repository' important />
-          </div>
+          {project.repo ? (
+            <div>
+              <p className='statusTitle'>CODE</p>
+              <CustomLink link='#' title='Repository' important />
+            </div>
+          ) : null}
         </section>
 
         {/* Project image  */}
