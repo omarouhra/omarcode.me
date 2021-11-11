@@ -78,7 +78,7 @@ function page({ projects, project }) {
 
         {/* Project image  */}
 
-        <section className='max-w-screen-xl mx-auto flex justify-center my-24'>
+        <section className='max-w-screen-xl mx-auto flex justify-center my-24 px-4'>
           <div className='w-[800px] h-[1000px]'>
             {project.preview ? (
               <img
