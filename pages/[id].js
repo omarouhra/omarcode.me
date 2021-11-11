@@ -5,15 +5,29 @@ import Head from "next/head";
 import Project from "../components/Project";
 import { useState } from "react";
 import axios from "axios";
+import { motion } from "framer-motion";
 
 function page({ projects, project }) {
-  const [isOpen, setisOpen] = useState(1);
+  const [isOpen, setIsOpen] = useState(false);
+
+  const transition = { duration: 0.7, ease: [0.4, 0.13, 0.23, 0.9] };
+
+
+  const items = [
+    { title: "What the client thinks" },
+    { title: "Web Stack and Explanation" },
+    { title: "Problems and Thought Process" },
+    { title: "Lessons Learned" },
+  ];
 
   const otherPosts = projects.filter(
     article => article.id != project.id && article.type.id === project.type.id
   );
   return (
-    <div>
+    <motion.div
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 ,transition : transition }}
+      exit={{ opacity: 0 }}>
       <Head>
         <title>{project.title} page</title>
         <link rel='icon' href='/favicon.ico' />
@@ -108,7 +122,7 @@ function page({ projects, project }) {
       <footer className=' max-w-screen-xl mx-auto px-4 md:px-12  lg:px-24 mt-12 lg:mt-24 w-full'>
         <Footer />
       </footer>
-    </div>
+    </motion.div>
   );
 }
 

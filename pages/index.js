@@ -14,7 +14,11 @@ export default function Home({ Projects, Categories }) {
   const transition = { duration: 0.7, ease: [0.4, 0.13, 0.23, 0.9] };
 
   return (
-    <div className='flex flex-col h-screen bg-white font-custom'>
+    <motion.div
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1, transition: transition }}
+      exit={{ opacity: 0 }}
+      className='flex flex-col h-screen bg-white font-custom'>
       <Head>
         <title>Omar Ouhra - Front End Developer </title>
         <link rel='icon' href='/favicon.ico' />
@@ -77,7 +81,7 @@ export default function Home({ Projects, Categories }) {
 
         {/* Skills Section */}
 
-        <section className=' max-w-screen-xl mx-auto bg-gradient-to-r from-darkBlue to-blue-800 text-white py-40 px-6 md:px-12  lg:px-24 mt-12 lg:rounded-md shadow lg:mt-0 lg:-translate-y-44 '>
+        <section className=' max-w-screen-xl mx-auto bg-gradient-to-r from-darkBlue to-blue-900 text-white py-40 px-6 md:px-12  lg:px-24 mt-12 lg:rounded-md shadow lg:mt-0 lg:-translate-y-44 '>
           <div className=' max-w-screen-xl mx-auto text-white rounded-md '>
             <h2 className='title'>My Skills</h2>
             <p className='text-sm font-light leading-normal my-8 md:text-base md:w-3/4'>
@@ -200,7 +204,7 @@ export default function Home({ Projects, Categories }) {
       <footer className=' max-w-screen-xl mx-auto px-4 md:px-12  lg:px-24 mt-12 lg:my-24 w-full'>
         <Footer />
       </footer>
-    </div>
+    </motion.div>
   );
 }
 
