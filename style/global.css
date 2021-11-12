@@ -36,6 +36,11 @@
   .custom-link {
     @apply font-bold hover:text-blue-500 transitions;
   }
+
+  /* Section Spacing */
+  .spacing {
+    @apply my-12 md:my-16 lg:my-24
+  }
 }
 @layer utilities {
   .shadow {

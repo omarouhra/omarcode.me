@@ -35,7 +35,7 @@ export default function Home({ Projects, Categories }) {
       </nav>
       <main>
         {/* Hero section */}
-        <section className='max-w-screen-xl mx-auto flex flex-col px-4 lg:px-12   justify-center items-start mt-36 lg:mt-40'>
+        <section className='max-w-screen-xl mx-auto flex flex-col px-4 lg:px-12   justify-center items-start mt-24 lg:mt-40'>
           <h1 className=' text-xl md:text-3xl lg:text-5xl font-bold leading-loose md:w-4/6 lg:w-[80%] md:leading-normal lg:leading-normal'>
             Hey There! I'm <span className='text-lightBlue'>Omar</span> . Front
             End Developer & Digital Content Creator.
@@ -52,7 +52,7 @@ export default function Home({ Projects, Categories }) {
         </section>
 
         {/* status section */}
-        <section className=' max-w-screen-xl mx-auto flex flex-col px-4 lg:px-12 mt-20  space-y-12 lg:space-y-0 lg:flex-row  lg:justify-between lg:space-x-6'>
+        <section className=' max-w-screen-xl mx-auto flex flex-col px-4 lg:px-12 mt-12  space-y-12 lg:space-y-0 lg:flex-row  lg:justify-between lg:space-x-6'>
           <div className='grid lg:grid-cols-3 space-y-12 lg:space-y-0  mlgspace-x-4 max-w-4xl lg:pt-24 '>
             <div>
               <p className='statusTitle'>CURRENTLY</p>
@@ -80,7 +80,7 @@ export default function Home({ Projects, Categories }) {
 
         {/* Skills Section */}
 
-        <section className=' max-w-screen-xl mx-auto bg-gradient-to-r from-darkBlue to-blue-900 text-white py-40 px-6 md:px-12  lg:px-24 mt-12 lg:rounded-lg shadow lg:mt-0 lg:-translate-y-44 '>
+        <section className=' max-w-screen-xl mx-auto bg-gradient-to-r from-darkBlue to-blue-900 text-white py-40 px-6 md:px-12  lg:px-24  lg:rounded-lg shadow spacing lg:-translate-y-44 '>
           <div className=' max-w-screen-xl mx-auto text-white rounded-md '>
             <h2 className='title'>My Skills</h2>
             <p className='text-sm font-light leading-normal my-8 md:text-base md:w-3/4'>
@@ -104,14 +104,14 @@ export default function Home({ Projects, Categories }) {
         </section>
 
         {/* Project Section */}
-        <section className=' max-w-screen-xl mx-auto px-4  md:px-12   mt-12'>
+        <section className=' max-w-screen-xl mx-auto px-4  md:px-12   spacing'>
           <h2 className='title'>Recent Work </h2>
           <p className='text-sm  mt-6 lg:mt-12 leading-normal sm:w-4/5 md:w-3/5 md:text-base lg:leading-relaxed  text-gray-500 font-light '>
             I like to stay busy and always have a project in the works. Take a
             look at some of the applications, articles, and companies I've
             dedicated my time to.
           </p>
-          <div className='flex space-x-4 lg:space-x-12 mt-12 lg:mt-24'>
+          <div className='flex space-x-4 lg:space-x-12 mt-16 lg:mt-24'>
             {Categories.map(filter => (
               <div key={filter.id}>
                 <button
@@ -129,7 +129,7 @@ export default function Home({ Projects, Categories }) {
             ))}
           </div>
 
-          <div className='grid grid-cols-1 md:grid-cols-2 gap-12 my-12 lg:my-20'>
+          <div className='grid grid-cols-1 md:grid-cols-2 gap-12 my-16 lg:my-20'>
             {Projects.map(project =>
               project.type.id === isActive ? (
                 <motion.div
@@ -159,7 +159,7 @@ export default function Home({ Projects, Categories }) {
 
         {/* Work Process Section */}
 
-        <section className=' max-w-screen-xl mx-auto px-6 md:px-12   my-12 lg:my-44 flex flex-col space-y-12 lg:flex-row lg:space-y-0  lg:items-center lg:justify-between'>
+        <section className=' max-w-screen-xl mx-auto px-4 md:px-12   spacing flex flex-col space-y-12 lg:flex-row lg:space-y-0  lg:items-center lg:justify-between'>
           <div>
             <p className='text-xs text-blue-500'>
               {" "}
@@ -177,7 +177,7 @@ export default function Home({ Projects, Categories }) {
 
         {/* Instagram Section */}
 
-        <section className=' max-w-screen-xl mx-auto px-4 md:px-12   mt-12 lg:my-44 flex flex-col space-y-12 lg:flex-row lg:space-y-0 lg:spacex12 lg:items-center lg:justify-between'>
+        <section className=' max-w-screen-xl mx-auto px-4 md:px-12  spacing flex flex-col space-y-12 lg:flex-row lg:space-y-0 lg:spacex12 lg:items-center lg:justify-between'>
           <div>
             <h2 className='title'>
               I’m a lot cooler on{" "}
