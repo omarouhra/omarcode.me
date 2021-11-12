@@ -89,83 +89,53 @@ function page({ projects, project }) {
         {/* Project Details Section */}
         <section className='max-w-screen-lg mx-auto px-4 my-12 md:px-12   lg:my-56 space-y-12 lg:space-y-24'>
           {/* Client review */}
+          <div>
+            <h2 className='title'>
+              What The Client Thinks
+            </h2>
 
-          <h2 className='font-semibold uppercase text-lg'>
-            What The Client Thinks
-          </h2>
+            <p className='text-2xl font-semibold   mt-4 '>💫</p>
 
-          <p className='text-2xl font-semibold   mt-4 lg:mt-12'>💫</p>
-
-          <p className=' text-xs mt-4  leading-loose lg:leading-loose max-w-2xl md:text-base  font-light '>
-            {project.review}
-          </p>
-          <p className='mt-8 text-sm '>{project.ceo}</p>
-
-          {/* Project Goals*/}
-          <div className='flex items-center justify-between'>
-            <h2 className='font-semibold uppercase text-lg'>Project's Goal</h2>
-            <img
-              className={
-                isOpen === 2
-                  ? "w-6 transform rotate-180 fill-current  text-white transitions "
-                  : "w-6 transform rotate-90 transitions "
-              }
-              src='https://www.svgrepo.com/show/83803/up-arrow.svg'
-              alt='logo'
-            />
-          </div>
-          <div
-            className={
-              isOpen === 2 ? "inline transitions " : "hidden transitions"
-            }>
-            <p className=' text-xs  mt-4  leading-loose lg:leading-loose max-w-2xl md:text-base  text-gray-50 font-light '>
+            <p className=' text-xs mt-4  leading-loose lg:leading-loose max-w-2xl md:text-base  font-light '>
               {project.review}
             </p>
+            <p className='mt-2 text-sm '>{project.ceo}</p>
           </div>
+          <div className='lg:grid lg:grid-cols-2 gap-12 lg:gap-24'>
+            {/* Project Goals*/}
+            <div>
+              <h2 className='title'>
+                Project's Goal
+              </h2>
 
-          {/* Toolset*/}
-          <div className='flex items-center justify-between'>
-            <h2 className='font-semibold uppercase text-lg'>Toolset</h2>
-            <img
-              className={
-                isOpen === 3
-                  ? "w-6 transform rotate-180 fill-current  text-white transitions "
-                  : "w-6 transform rotate-90 transitions "
-              }
-              src='https://www.svgrepo.com/show/83803/up-arrow.svg'
-              alt='logo'
-            />
-          </div>
+              <div>
+                <p className=' text-xs  mt-4  leading-loose lg:leading-loose max-w-2xl md:text-base font-light '>
+                  {project.review}
+                </p>
+              </div>
+            </div>
 
-          <div
-            className={
-              isOpen === 3 ? "inline transitions " : "hidden transitions"
-            }>
-            <p className=' text-xs  mt-4  leading-loose lg:leading-loose max-w-2xl md:text-base  text-gray-50 font-light '>
-              {project.toolset}
-            </p>
-          </div>
+            {/* Toolset*/}
+            <div>
+              <h2 className='title'>Toolset</h2>
 
-          {/* Challenges */}
-          <div className='flex items-center justify-between'>
-            <h2 className='font-semibold uppercase text-lg'>Challenges</h2>
-            <img
-              className={
-                isOpen === 4
-                  ? "w-6 transform rotate-180 fill-current  text-white transitions "
-                  : "w-6 transform rotate-90 transitions "
-              }
-              src='https://www.svgrepo.com/show/83803/up-arrow.svg'
-              alt='logo'
-            />
-          </div>
-          <div
-            className={
-              isOpen === 4 ? "inline transitions " : "hidden transitions"
-            }>
-            <p className=' text-xs  mt-4  leading-loose lg:leading-loose max-w-2xl md:text-base  text-gray-50 font-light '>
-              {project.challenges}
-            </p>
+              <div>
+                <p className=' text-xs  mt-4  leading-loose lg:leading-loose max-w-2xl md:text-base font-light '>
+                  {project.toolset}
+                </p>
+              </div>
+            </div>
+
+            {/* Challenges */}
+            <div>
+              <h2 className='title'>Challenges</h2>
+
+              <div>
+                <p className=' text-xs  mt-4  leading-loose lg:leading-loose max-w-2xl md:text-base font-light '>
+                  {project.challenges}
+                </p>
+              </div>
+            </div>
           </div>
         </section>
 
