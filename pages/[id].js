@@ -90,9 +90,7 @@ function page({ projects, project }) {
         <section className='max-w-screen-lg mx-auto px-4 my-12 md:px-12   lg:my-56 space-y-12 lg:space-y-24'>
           {/* Client review */}
           <div>
-            <h2 className='title'>
-              What The Client Thinks
-            </h2>
+            <h2 className='title'>What The Client Thinks</h2>
 
             <p className='text-2xl font-semibold   mt-4 '>💫</p>
 
@@ -104,9 +102,7 @@ function page({ projects, project }) {
           <div className='lg:grid lg:grid-cols-2 gap-12 lg:gap-24'>
             {/* Project Goals*/}
             <div>
-              <h2 className='title'>
-                Project's Goal
-              </h2>
+              <h2 className='title'>Project's Goal</h2>
 
               <div>
                 <p className=' text-xs  mt-4  leading-loose lg:leading-loose max-w-2xl md:text-base font-light '>
@@ -162,9 +158,8 @@ function page({ projects, project }) {
       </main>
 
       {/* Footer */}
-      <footer className=' max-w-screen-xl mx-auto px-4 md:px-12 mt-24    lg:mt-24 w-full'>
-        <Footer />
-      </footer>
+
+      <Footer />
     </motion.div>
   );
 }

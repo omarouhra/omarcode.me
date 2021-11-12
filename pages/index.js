@@ -36,7 +36,7 @@ export default function Home({ Projects, Categories }) {
       <main>
         {/* Hero section */}
         <section className='max-w-screen-xl mx-auto flex flex-col px-4 lg:px-12   justify-center items-start mt-36 lg:mt-40'>
-          <h1 className=' text-xl md:text-3xl lg:text-5xl font-bold leading-loose md:w-4/5 lg:w-[80%] md:leading-normal lg:leading-normal'>
+          <h1 className=' text-xl md:text-3xl lg:text-6xl font-bold leading-loose md:w-4/6 lg:w-[90%] md:leading-normal lg:leading-normal'>
             Hey There! I'm <span className='text-lightBlue'>Omar</span> . Front
             End Developer & Digital Content Creator.
           </h1>
@@ -81,7 +81,7 @@ export default function Home({ Projects, Categories }) {
 
         {/* Skills Section */}
 
-        <section className=' max-w-screen-xl mx-auto bg-gradient-to-r from-darkBlue to-blue-900 text-white py-40 px-6 md:px-12  lg:px-24 mt-12 lg:rounded-md shadow lg:mt-0 lg:-translate-y-44 '>
+        <section className=' max-w-screen-xl mx-auto bg-gradient-to-r from-darkBlue to-blue-900 text-white py-40 px-6 md:px-12  lg:px-24 mt-12 lg:rounded-lg shadow lg:mt-0 lg:-translate-y-44 '>
           <div className=' max-w-screen-xl mx-auto text-white rounded-md '>
             <h2 className='title'>My Skills</h2>
             <p className='text-sm font-light leading-normal my-8 md:text-base md:w-3/4'>
@@ -201,9 +201,8 @@ export default function Home({ Projects, Categories }) {
       </main>
 
       {/* Footer */}
-      <footer className=' max-w-screen-xl mx-auto px-4 md:px-12 mt-12 lg:my-24 w-full'>
-        <Footer />
-      </footer>
+
+      <Footer />
     </motion.div>
   );
 }
