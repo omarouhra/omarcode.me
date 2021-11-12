@@ -87,125 +87,85 @@ function page({ projects, project }) {
         </section>
 
         {/* Project Details Section */}
-        <section className='max-w-screen-lg mx-auto px-4 my-12 md:px-12  lg:px-24 lg:my-56 space-y-12 lg:space-y-24'>
+        <section className='max-w-screen-xl mx-auto px-4 my-12 md:px-12  lg:px-24 lg:my-56 space-y-12 lg:space-y-24'>
           {/* Client review */}
-          <div
-            onClick={() => setIsOpen(1)}
-            className={
-              isOpen === 1 ? "info-container-active " : "info-container"
-            }>
-            <div className='flex items-center justify-between'>
-              <h2 className='font-semibold uppercase text-lg'>
-                What The Client Thinks
-              </h2>
-              <img
-                className={
-                  isOpen === 1
-                    ? "w-6 transform rotate-180 fill-current  text-white transitions "
-                    : "w-6 transform rotate-90 transitions "
-                }
-                src='https://www.svgrepo.com/show/83803/up-arrow.svg'
-                alt='logo'
-              />
-            </div>
-            <div
-              className={
-                isOpen === 1 ? "inline transitions " : "hidden transitions"
-              }>
-              <p className='text-2xl  mt-4 lg:mt-12'>💫</p>
 
-              <p className=' text-xs  mt-4  leading-loose lg:leading-loose max-w-2xl md:text-base  text-gray-50 font-light '>
-                {project.review}
-              </p>
-              <p className='mt-8 text-sm '>{project.ceo}</p>
-            </div>
-          </div>
+          <h2 className='font-semibold uppercase text-lg'>
+            What The Client Thinks
+          </h2>
+
+          <p className='text-2xl font-semibold   mt-4 lg:mt-12'>💫</p>
+
+          <p className=' text-xs mt-4  leading-loose lg:leading-loose max-w-2xl md:text-base  font-light '>
+            {project.review}
+          </p>
+          <p className='mt-8 text-sm '>{project.ceo}</p>
 
           {/* Project Goals*/}
-          <div
-            onClick={() => setIsOpen(2)}
-            className={
-              isOpen === 2 ? "info-container-active " : "info-container"
-            }>
-            <div className='flex items-center justify-between'>
-              <h2 className='font-semibold uppercase text-lg'>
-                Project's Goal
-              </h2>
-              <img
-                className={
-                  isOpen === 2
-                    ? "w-6 transform rotate-180 fill-current  text-white transitions "
-                    : "w-6 transform rotate-90 transitions "
-                }
-                src='https://www.svgrepo.com/show/83803/up-arrow.svg'
-                alt='logo'
-              />
-            </div>
-            <div
+          <div className='flex items-center justify-between'>
+            <h2 className='font-semibold uppercase text-lg'>Project's Goal</h2>
+            <img
               className={
-                isOpen === 2 ? "inline transitions " : "hidden transitions"
-              }>
-              <p className=' text-xs  mt-4  leading-loose lg:leading-loose max-w-2xl md:text-base  text-gray-50 font-light '>
-                {project.review}
-              </p>
-            </div>
+                isOpen === 2
+                  ? "w-6 transform rotate-180 fill-current  text-white transitions "
+                  : "w-6 transform rotate-90 transitions "
+              }
+              src='https://www.svgrepo.com/show/83803/up-arrow.svg'
+              alt='logo'
+            />
+          </div>
+          <div
+            className={
+              isOpen === 2 ? "inline transitions " : "hidden transitions"
+            }>
+            <p className=' text-xs  mt-4  leading-loose lg:leading-loose max-w-2xl md:text-base  text-gray-50 font-light '>
+              {project.review}
+            </p>
           </div>
 
           {/* Toolset*/}
-          <div
-            onClick={() => setIsOpen(3)}
-            className={
-              isOpen === 3 ? "info-container-active " : "info-container"
-            }>
-            <div className='flex items-center justify-between'>
-              <h2 className='font-semibold uppercase text-lg'>Toolset</h2>
-              <img
-                className={
-                  isOpen === 3
-                    ? "w-6 transform rotate-180 fill-current  text-white transitions "
-                    : "w-6 transform rotate-90 transitions "
-                }
-                src='https://www.svgrepo.com/show/83803/up-arrow.svg'
-                alt='logo'
-              />
-            </div>
-
-            <div
+          <div className='flex items-center justify-between'>
+            <h2 className='font-semibold uppercase text-lg'>Toolset</h2>
+            <img
               className={
-                isOpen === 3 ? "inline transitions " : "hidden transitions"
-              }>
-              <p className=' text-xs  mt-4  leading-loose lg:leading-loose max-w-2xl md:text-base  text-gray-50 font-light '>
-                {project.toolset}
-              </p>
-            </div>
+                isOpen === 3
+                  ? "w-6 transform rotate-180 fill-current  text-white transitions "
+                  : "w-6 transform rotate-90 transitions "
+              }
+              src='https://www.svgrepo.com/show/83803/up-arrow.svg'
+              alt='logo'
+            />
+          </div>
+
+          <div
+            className={
+              isOpen === 3 ? "inline transitions " : "hidden transitions"
+            }>
+            <p className=' text-xs  mt-4  leading-loose lg:leading-loose max-w-2xl md:text-base  text-gray-50 font-light '>
+              {project.toolset}
+            </p>
           </div>
 
           {/* Challenges */}
-          <div
-            onClick={() => setIsOpen(4)}
-            className={
-              isOpen === 4 ? "info-container-active " : "info-container"
-            }>
-            <div className='flex items-center justify-between'>
-              <h2 className='font-semibold uppercase text-lg'>Challenges</h2>
-              <img
-                className={
-                  isOpen === 4
-                    ? "w-6 transform rotate-180 fill-current  text-white transitions "
-                    : "w-6 transform rotate-90 transitions "
-                }
-                src='https://www.svgrepo.com/show/83803/up-arrow.svg'
-                alt='logo'
-              />
-            </div>
-            <div
+          <div className='flex items-center justify-between'>
+            <h2 className='font-semibold uppercase text-lg'>Challenges</h2>
+            <img
               className={
-                isOpen === 4 ? "inline transitions " : "hidden transitions"
-              }>
-              <p className=' text-xs  mt-4  leading-loose lg:leading-loose max-w-2xl md:text-base  text-gray-50 font-light '>
-                {project.challenges}
-              </p>
-            </div>
+                isOpen === 4
+                  ? "w-6 transform rotate-180 fill-current  text-white transitions "
+                  : "w-6 transform rotate-90 transitions "
+              }
+              src='https://www.svgrepo.com/show/83803/up-arrow.svg'
+              alt='logo'
+            />
+          </div>
+          <div
+            className={
+              isOpen === 4 ? "inline transitions " : "hidden transitions"
+            }>
+            <p className=' text-xs  mt-4  leading-loose lg:leading-loose max-w-2xl md:text-base  text-gray-50 font-light '>
+              {project.challenges}
+            </p>
           </div>
         </section>
 
