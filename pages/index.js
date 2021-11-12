@@ -36,7 +36,7 @@ export default function Home({ Projects, Categories }) {
       <main>
         {/* Hero section */}
         <section className='max-w-screen-xl mx-auto flex flex-col px-4 lg:px-12   justify-center items-start mt-36 lg:mt-40'>
-          <h1 className=' text-xl md:text-3xl lg:text-6xl font-bold leading-loose md:w-4/6 lg:w-[90%] md:leading-normal lg:leading-normal'>
+          <h1 className=' text-xl md:text-3xl lg:text-5xl font-bold leading-loose md:w-4/6 lg:w-[80%] md:leading-normal lg:leading-normal'>
             Hey There! I'm <span className='text-lightBlue'>Omar</span> . Front
             End Developer & Digital Content Creator.
           </h1>
@@ -46,14 +46,13 @@ export default function Home({ Projects, Categories }) {
             design. User interfaces with meaningful UX are what I strongly
             master!
           </p>
-
           <button className='font-semibold text-xs mt-8 lg:hover:text-lightBlue lg:hover:underline transition-all duration-500'>
             MY RESUME
           </button>
         </section>
 
         {/* status section */}
-        <section className=' max-w-screen-xl mx-auto flex flex-col px-4 lg:px-12 mt-20 lg:mt-32 space-y-12 lg:space-y-0 lg:flex-row  lg:justify-between lg:space-x-6'>
+        <section className=' max-w-screen-xl mx-auto flex flex-col px-4 lg:px-12 mt-20  space-y-12 lg:space-y-0 lg:flex-row  lg:justify-between lg:space-x-6'>
           <div className='grid lg:grid-cols-3 space-y-12 lg:space-y-0  mlgspace-x-4 max-w-4xl lg:pt-24 '>
             <div>
               <p className='statusTitle'>CURRENTLY</p>
