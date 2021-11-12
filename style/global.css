@@ -21,7 +21,7 @@
 
   /* filter button */
   .filter {
-    @apply text-sm lg:text-lg  font-semibold;
+    @apply text-sm lg:text-base  font-semibold;
   }
 
   /* project infos */

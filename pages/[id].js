@@ -87,19 +87,8 @@ function page({ projects, project }) {
         </section>
 
         {/* Project Details Section */}
-        <section className='max-w-screen-lg mx-auto px-4 my-12 md:px-12   lg:my-56 space-y-12 lg:space-y-24'>
-          {/* Client review */}
-          <div>
-            <h2 className='title'>What The Client Thinks</h2>
-
-            <p className='text-2xl font-semibold   mt-4 '>💫</p>
-
-            <p className=' text-xs mt-4  leading-loose lg:leading-loose max-w-2xl md:text-base  font-light '>
-              {project.review}
-            </p>
-            <p className='mt-2 text-sm '>{project.ceo}</p>
-          </div>
-          <div className='lg:grid lg:grid-cols-2 gap-12 lg:gap-24'>
+        <section className='max-w-screen-xl mx-auto px-4 my-12 md:px-12   lg:my-56 space-y-12 lg:space-y-32'>
+          <div className='space-y-12 lg:space-y-0 lg:grid lg:grid-cols-2  lg:gap-32'>
             {/* Project Goals*/}
             <div>
               <h2 className='title'>Project's Goal</h2>
@@ -123,21 +112,31 @@ function page({ projects, project }) {
             </div>
 
             {/* Challenges */}
-            <div>
+            <div className='col-span-full'>
               <h2 className='title'>Challenges</h2>
 
               <div>
-                <p className=' text-xs  mt-4  leading-loose lg:leading-loose max-w-2xl md:text-base font-light '>
+                <p className=' text-xs  mt-4  leading-loose lg:leading-loose md:text-base font-light '>
                   {project.challenges}
                 </p>
               </div>
+            </div>
+          </div>
+          {/* Client review */}
+          <div>
+            <div className='bg-gradient-to-r  max-w-4xl from-blue-500 to-blue-900 text-white  lg:rounded-lg px-4 lg:px-8 py-4 lg:py-12 text-center mx-auto'>
+              <p className='text-2xl font-semibold   mt-4 '>💫</p>
+              <p className=' text-xs mt-4 w-full leading-loose lg:leading-loose  md:text-base  font-light '>
+                {project.review}
+              </p>
+              <p className='mt-2 text-sm '>{project.ceo}</p>
             </div>
           </div>
         </section>
 
         {/* Other Project Section */}
 
-        <section className='max-w-screen-xl mx-auto px-4 mt-32  md:px-12   lg:my-56 '>
+        <section className='max-w-screen-xl mx-auto px-4  md:px-12  spacing'>
           <h2 className='title'>Other projects</h2>
           <div className='grid grid-cols-1 md:grid-cols-2 gap-12 my-12 lg:my-20'>
             {otherPosts.map(project => (
