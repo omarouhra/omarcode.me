@@ -87,7 +87,7 @@ function page({ projects, project }) {
         </section>
 
         {/* Project Details Section */}
-        <section className='max-w-screen-xl mx-auto px-4 my-12 md:px-12  lg:px-24 lg:my-56 space-y-12 lg:space-y-24'>
+        <section className='max-w-screen-lg mx-auto px-4 my-12 md:px-12   lg:my-56 space-y-12 lg:space-y-24'>
           {/* Client review */}
 
           <h2 className='font-semibold uppercase text-lg'>
@@ -171,7 +171,7 @@ function page({ projects, project }) {
 
         {/* Other Project Section */}
 
-        <section className='max-w-screen-xl mx-auto px-4 mt-32  md:px-12  lg:px-24 lg:my-56 '>
+        <section className='max-w-screen-xl mx-auto px-4 mt-32  md:px-12   lg:my-56 '>
           <h2 className='title'>Other projects</h2>
           <div className='grid grid-cols-1 md:grid-cols-2 gap-12 my-12 lg:my-20'>
             {otherPosts.map(project => (
@@ -192,7 +192,7 @@ function page({ projects, project }) {
       </main>
 
       {/* Footer */}
-      <footer className=' max-w-screen-xl mx-auto px-4 md:px-12 mt-24  lg:px-24  lg:mt-24 w-full'>
+      <footer className=' max-w-screen-xl mx-auto px-4 md:px-12 mt-24    lg:mt-24 w-full'>
         <Footer />
       </footer>
     </motion.div>

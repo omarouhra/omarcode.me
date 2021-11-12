@@ -105,7 +105,7 @@ export default function Home({ Projects, Categories }) {
         </section>
 
         {/* Project Section */}
-        <section className=' max-w-screen-xl mx-auto px-4  md:px-12  lg:px-24 mt-12'>
+        <section className=' max-w-screen-xl mx-auto px-4  md:px-12   mt-12'>
           <h2 className='title'>Recent Work </h2>
           <p className='text-sm  mt-6 lg:mt-12 leading-normal sm:w-4/5 md:w-3/5 md:text-base lg:leading-relaxed  text-gray-500 font-light '>
             I like to stay busy and always have a project in the works. Take a
@@ -160,7 +160,7 @@ export default function Home({ Projects, Categories }) {
 
         {/* Work Process Section */}
 
-        <section className=' max-w-screen-xl mx-auto px-6 md:px-12  lg:px-24 my-12 lg:my-44 flex flex-col space-y-12 lg:flex-row lg:space-y-0  lg:items-center lg:justify-between'>
+        <section className=' max-w-screen-xl mx-auto px-6 md:px-12   my-12 lg:my-44 flex flex-col space-y-12 lg:flex-row lg:space-y-0  lg:items-center lg:justify-between'>
           <div>
             <p className='text-xs text-blue-500'>
               {" "}
@@ -178,7 +178,7 @@ export default function Home({ Projects, Categories }) {
 
         {/* Instagram Section */}
 
-        <section className=' max-w-screen-xl mx-auto px-4 md:px-12  lg:px-24 mt-12 lg:my-44 flex flex-col space-y-12 lg:flex-row lg:space-y-0 lg:spacex12 lg:items-center lg:justify-between'>
+        <section className=' max-w-screen-xl mx-auto px-4 md:px-12   mt-12 lg:my-44 flex flex-col space-y-12 lg:flex-row lg:space-y-0 lg:spacex12 lg:items-center lg:justify-between'>
           <div>
             <h2 className='title'>
               I’m a lot cooler on{" "}
@@ -201,7 +201,7 @@ export default function Home({ Projects, Categories }) {
       </main>
 
       {/* Footer */}
-      <footer className=' max-w-screen-xl mx-auto px-4 md:px-12  lg:px-24 mt-12 lg:my-24 w-full'>
+      <footer className=' max-w-screen-xl mx-auto px-4 md:px-12 mt-12 lg:my-24 w-full'>
         <Footer />
       </footer>
     </motion.div>
