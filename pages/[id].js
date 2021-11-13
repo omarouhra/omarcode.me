@@ -8,8 +8,6 @@ import axios from "axios";
 import { motion } from "framer-motion";
 
 function page({ projects, project }) {
-
-
   const transition = { duration: 0.7, ease: [0.4, 0.13, 0.23, 0.9] };
 
   const otherPosts = projects.filter(
@@ -38,7 +36,7 @@ function page({ projects, project }) {
           <CustomLink link='/' title='←' big />
 
           <h2 className='big-title mt-4 lg:mt-12'>{project.title}</h2>
-          <p className=' text-sm  mt-12 leading-loose lg:leading-loose sm:w-4/5 md:w-4/5 md:text-base  text-gray-500 font-light '>
+          <p className=' sm:w-4/5 md:w-4/5 md:text-base  text '>
             {project.content}
           </p>
         </section>
@@ -94,9 +92,7 @@ function page({ projects, project }) {
               <h2 className='title'>Project's Goal</h2>
 
               <div>
-                <p className=' text-xs  mt-4  leading-loose lg:leading-loose max-w-2xl md:text-base font-light '>
-                  {project.review}
-                </p>
+                <p className='text'>{project.review}</p>
               </div>
             </div>
 
@@ -105,7 +101,7 @@ function page({ projects, project }) {
               <h2 className='title'>Toolset</h2>
 
               <div>
-                <p className=' text-xs  mt-4  leading-loose lg:leading-loose max-w-2xl md:text-base font-light '>
+                <p className=' text'>
                   {project.toolset}
                 </p>
               </div>
@@ -116,7 +112,7 @@ function page({ projects, project }) {
               <h2 className='title'>Challenges</h2>
 
               <div>
-                <p className=' text-xs  mt-4  leading-loose lg:leading-loose md:text-base font-light '>
+                <p className='text'>
                   {project.challenges}
                 </p>
               </div>
@@ -124,7 +120,7 @@ function page({ projects, project }) {
           </div>
           {/* Client review */}
           <div>
-            <div className='bg-gradient-to-r  max-w-4xl from-blue-500 to-blue-900 text-white  lg:rounded-lg px-4 lg:px-8 py-4 lg:py-12 text-center mx-auto'>
+            <div className='bg-gradient-to-r  max-w-4xl from-blue-500 to-blue-900 text-white  lg:rounded-lg px-4 lg:px-8 py-4 lg:py-12 text-center mx-auto lg:shadow-2xl'>
               <p className='text-2xl font-semibold   mt-4 '>💫</p>
               <p className=' text-xs mt-4 w-full leading-loose lg:leading-loose  md:text-base  font-light '>
                 {project.review}

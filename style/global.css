@@ -19,6 +19,11 @@
     @apply text-2xl md:text-3xl lg:text-5xl font-semibold uppercase tracking-widest;
   }
 
+  /* text */
+  .text {
+    @apply text-sm  mt-12 leading-loose lg:leading-loose  md:text-base  text-gray-500 font-light;
+  }
+
   /* filter button */
   .filter {
     @apply text-sm lg:text-base  font-semibold;
@@ -39,7 +44,7 @@
 
   /* Section Spacing */
   .spacing {
-    @apply my-12 md:my-16 lg:my-24
+    @apply my-12 md:my-16 lg:my-24;
   }
 }
 @layer utilities {
