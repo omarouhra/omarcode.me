@@ -45,9 +45,10 @@ export default function Home({ Projects, Categories }) {
             design. User interfaces with meaningful UX are what I strongly
             master!
           </p>
-          <button className='font-semibold text-xs mt-8 lg:hover:text-lightBlue lg:hover:underline transition-all duration-500'>
-            MY RESUME
-          </button>
+          <div className='flex space-x-6 mt-12'>
+            <CustomLink title='ABOUT ME' link='/aboutMe' />
+            <CustomLink title='MY RESUME' link='#' />
+          </div>
         </section>
 
         {/* status section */}
@@ -79,7 +80,7 @@ export default function Home({ Projects, Categories }) {
 
         {/* Skills Section */}
 
-        <section className=' max-w-screen-xl mx-auto bg-gradient-to-r from-darkBlue to-blue-900 text-white py-40 px-6 md:px-12  lg:px-24  lg:rounded-lg shadow spacing lg:-translate-y-44 '>
+        <section className=' max-w-screen-xl mx-auto bg-gradient-to-r from-darkBlue to-blue-900 text-white py-40 px-6 md:px-12  lg:px-24  xl:rounded-lg shadow spacing lg:-translate-y-44 '>
           <div className=' max-w-screen-xl mx-auto text-white rounded-md '>
             <h2 className='title'>My Skills</h2>
             <p className='text-sm font-light leading-normal my-8 md:text-base md:w-3/4'>
