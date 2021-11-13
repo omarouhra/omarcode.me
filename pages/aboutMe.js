@@ -1,9 +1,15 @@
 import Footer from "../components/Footer";
 import NavBar from "../components/NavBar";
+import { motion } from "framer-motion";
 
 function aboutMe() {
+  const transition = { duration: 0.7, ease: [0.4, 0.13, 0.23, 0.9] };
+
   return (
-    <div>
+    <motion.div
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1, transition: transition }}
+      exit={{ opacity: 0 }}>
       <NavBar />
       <main className='max-w-screen-xl mx-auto spacing  px-4 lg:px-12'>
         <h2 className='title'>About me</h2>
@@ -23,7 +29,7 @@ function aboutMe() {
         </p>
       </main>
       <Footer />
-    </div>
+    </motion.div>
   );
 }
 
