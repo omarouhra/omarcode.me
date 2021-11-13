@@ -96,19 +96,10 @@ function page({ projects, project }) {
               </div>
             </div>
 
-            {/* Toolset*/}
-            <div>
-              <h2 className='title'>Toolset</h2>
-
-              <div>
-                <p className=' text'>
-                  {project.toolset}
-                </p>
-              </div>
-            </div>
+            
 
             {/* Challenges */}
-            <div className='col-span-full'>
+            <div>
               <h2 className='title'>Challenges</h2>
 
               <div>

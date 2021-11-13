@@ -36,7 +36,7 @@ export default function Home({ Projects, Categories }) {
         {/* Hero section */}
         <section className='max-w-screen-xl mx-auto flex flex-col px-4 lg:px-12   justify-center items-start mt-24 lg:mt-40'>
           <h1 className=' text-xl md:text-3xl lg:text-5xl font-bold leading-loose md:w-4/6 lg:w-[80%] md:leading-normal lg:leading-normal'>
-            Hey There! I'm <span className='text-lightBlue'>Omar</span> . Front
+            Hey There! I'm <span className='text-lightBlue'>Omar</span>. Front
             End Developer & Digital Content Creator.
           </h1>
           <p className=' text-sm  mt-6 leading-normal sm:w-4/5 md:w-3/5 md:text-base  text-gray-500 font-light '>
@@ -159,7 +159,7 @@ export default function Home({ Projects, Categories }) {
         {/* Work Process Section */}
 
         <section className=' max-w-screen-xl mx-auto px-4 md:px-12   spacing flex flex-col space-y-12 lg:flex-row lg:space-y-0  lg:items-center lg:justify-between'>
-          <div>
+          <div className='lg:w-1/2'>
             <p className='text-xs text-blue-500'>
               {" "}
               Want to know what is like to work with me?{" "}
@@ -169,7 +169,7 @@ export default function Home({ Projects, Categories }) {
 
           <img
             src='http://localhost:1337/uploads/process_00fbc4eb3c.gif'
-            alt='hero image'
+            alt='process gif'
             className='lg:w-1/2'
           />
         </section>
