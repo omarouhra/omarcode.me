@@ -8,7 +8,6 @@ import { useState } from "react";
 import { motion } from "framer-motion";
 
 export default function Home({ Projects, Categories }) {
-  console.log(Projects[0]);
   const [isActive, setIsActive] = useState(4);
 
   const transition = { duration: 0.7, ease: [0.4, 0.13, 0.23, 0.9] };

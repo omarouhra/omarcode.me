@@ -8,7 +8,7 @@ import axios from "axios";
 import { motion } from "framer-motion";
 
 function page({ projects, project }) {
-  const [isOpen, setIsOpen] = useState(1);
+
 
   const transition = { duration: 0.7, ease: [0.4, 0.13, 0.23, 0.9] };
 
@@ -143,10 +143,10 @@ function page({ projects, project }) {
               <Project
                 image={
                   project.image
-                    ? `http://localhost:1337${project.image.url}`
+                    ? `http://localhost:1337${project?.image.url}`
                     : null
                 }
-                imageAlt={project.image ? project.image.name : null}
+                imageAlt={project?.image ? project?.image.name : null}
                 title={project.title}
                 description={project.description}
                 link={`/${project.id}`}
