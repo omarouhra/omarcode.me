@@ -19,7 +19,7 @@ function page() {
       animate={{ opacity: 1, transition: transition }}
       exit={{ opacity: 0 }}>
       <Head>
-        <title>{project.title} page</title>
+        <title> page</title>
         <link rel='icon' href='/favicon.ico' />
         <link rel='preconnect' href='https://fonts.googleapis.com' />
         <link rel='preconnect' href='https://fonts.gstatic.com' crossorigin />
