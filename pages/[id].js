@@ -7,12 +7,12 @@ import { useState } from "react";
 import axios from "axios";
 import { motion } from "framer-motion";
 
-function page({ projects, project }) {
+function page() {
   const transition = { duration: 0.7, ease: [0.4, 0.13, 0.23, 0.9] };
 
-  const otherPosts = projects.filter(
-    article => article.id != project.id && article.type.id === project.type.id
-  );
+  // const otherPosts = projects.filter(
+  //   article => article.id != project.id && article.type.id === project.type.id
+  // );
   return (
     <motion.div
       initial={{ opacity: 0 }}
@@ -126,7 +126,7 @@ function page({ projects, project }) {
         <section className='max-w-screen-xl mx-auto px-4  md:px-12  spacing'>
           <h2 className='title'>Other projects</h2>
           <div className='grid grid-cols-1 md:grid-cols-2 gap-12 my-12 lg:my-20'>
-            {otherPosts.map(project => (
+            {/* {otherPosts.map(project => (
               <Project
                 image={
                   project.image
@@ -138,7 +138,7 @@ function page({ projects, project }) {
                 description={project.description}
                 link={`/${project.id}`}
               />
-            ))}
+            ))} */}
           </div>
         </section>
       </main>
@@ -152,16 +152,3 @@ function page({ projects, project }) {
 
 export default page;
 
-export async function getServerSideProps(context) {
-  const { params } = context;
-  const { id } = params;
-  const post = await axios.get(`http://localhost:1337/posts/${id}`);
-  const posts = await axios.get("http://localhost:1337/posts");
-
-  return {
-    props: {
-      project: post.data,
-      projects: posts.data,
-    },
-  };
-}

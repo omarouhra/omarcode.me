@@ -112,7 +112,7 @@ export default function Home({ Projects, Categories }) {
             dedicated my time to.
           </p>
           <div className='flex space-x-4 lg:space-x-12 mt-16 lg:mt-24'>
-            {Categories.map(filter => (
+            {/* {Categories.map(filter => (
               <div key={filter.id}>
                 <button
                   onClick={() => {
@@ -126,11 +126,11 @@ export default function Home({ Projects, Categories }) {
                   {filter.title}
                 </button>
               </div>
-            ))}
+            ))} */}
           </div>
 
           <div className='grid grid-cols-1 md:grid-cols-2 gap-12 my-16 lg:my-20'>
-            {Projects.map(project =>
+            {/* {Projects.map(project =>
               project.type.id === isActive ? (
                 <motion.div
                   key={project.id}
@@ -153,7 +153,7 @@ export default function Home({ Projects, Categories }) {
                   />
                 </motion.div>
               ) : null
-            )}
+            )} */}
           </div>
         </section>
 
@@ -206,14 +206,3 @@ export default function Home({ Projects, Categories }) {
   );
 }
 
-export async function getServerSideProps() {
-  const posts = await axios.get("http://localhost:1337/posts");
-  const categories = await axios.get("http://localhost:1337/types");
-
-  return {
-    props: {
-      Projects: posts.data,
-      Categories: categories.data,
-    },
-  };
-}
