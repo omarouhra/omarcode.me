@@ -164,7 +164,7 @@ export default function Home({ projects }) {
 
           <div className='grid grid-cols-1 md:grid-cols-2 gap-12 my-16 lg:my-20'>
             {projects.map((project, index) => (
-              <div>
+              <>
                 {project.frontmatter.category === isActive ? (
                   <motion.div
                     key={index}
@@ -183,7 +183,7 @@ export default function Home({ projects }) {
                     />
                   </motion.div>
                 ) : null}
-              </div>
+              </>
             ))}
           </div>
         </section>
