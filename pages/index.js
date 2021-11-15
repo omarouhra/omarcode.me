@@ -26,7 +26,7 @@ export default function Home() {
       initial={{ opacity: 0 }}
       animate={{ opacity: 1, transition: transition }}
       exit={{ opacity: 0 }}
-      className='flex flex-col h-screen bg-white max-w-[1000px] mx-auto px-4 md:px-6'>
+      className='flex flex-col h-screen bg-white max-w-[1000px] mx-auto px-4 md:px-6 antialiased'>
       <Head>
         <title>Omar Ouhra - Front End Developer </title>
         <link rel='icon' href='/favicon.ico' />
@@ -50,7 +50,7 @@ export default function Home() {
               Hey There! I'm <span className='text-lightBlue'>Omar</span>. Front
               End Developer & Digital Content Creator.
             </h1>
-            <p className=' text-sm  mt-4 leading-normal md:leading-loose  md:text-base  text-gray-800 font-light '>
+            <p className=' text-sm  mt-4 leading-normal md:leading-loose  md:text-base  text-gray-800 font-normal '>
               I am 22 years old from Morocco. My mission is to scale up your Web
               presence with high problem-solving skills and a huge passion for
               design. User interfaces with meaningful UX are what I strongly
@@ -97,7 +97,7 @@ export default function Home() {
         <section>
           <div>
             <h2 className='title'>My Skills</h2>
-            <p className='text-sm  mt-4 leading-normal md:leading-loose   md:text-base  text-gray-800 font-light  md:w-4/5'>
+            <p className='text-sm  mt-4 leading-normal md:leading-loose   md:text-base  text-gray-800 font-normal  md:w-4/5'>
               As a developer, I am convinced that the way to be successful in
               such a crowded market is to always LEARN. But far away from the
               basics, I have dedicated the Big Majority of my time to practice
@@ -137,7 +137,7 @@ export default function Home() {
         {/* Project Section */}
         <section className=''>
           <h2 className='title'>Recent Work </h2>
-          <p className='text-sm  mt-6 lg:mt-12 leading-normal md:leading-loose  sm:w-4/5 md:w-3/5 md:text-base  text-gray-800 font-light  '>
+          <p className='text-sm  mt-6  leading-normal md:leading-loose  sm:w-4/5 md:w-3/5 md:text-base  text-gray-800 font-normal  '>
             I like to stay busy and always have a project in the works. Take a
             look at some of the applications, articles, and companies I've
             dedicated my time to.
