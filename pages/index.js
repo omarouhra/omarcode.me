@@ -26,7 +26,7 @@ export default function Home() {
       initial={{ opacity: 0 }}
       animate={{ opacity: 1, transition: transition }}
       exit={{ opacity: 0 }}
-      className='flex flex-col h-screen bg-white font-custom'>
+      className='flex flex-col h-screen bg-white max-w-[1000px] mx-auto px-4 md:px-6'>
       <Head>
         <title>Omar Ouhra - Front End Developer </title>
         <link rel='icon' href='/favicon.ico' />
@@ -38,15 +38,15 @@ export default function Home() {
         />
       </Head>
       {/* Navbar */}
-      <nav>
+      <nav >
         <NavBar />
       </nav>
-      <main className='max-w-[1000px] mx-auto flex-col space-y-12 md:space-y-24 px-4 md:px-6'>
+      <main className=' flex-col space-y-12 md:space-y-24 '>
         {/* Hero section */}
 
         <section className='mt-12 flex flex-col space-y-12 md:space-y-0 md:flex-row md:justify-between md:items-start'>
           <div className='lg:w-2/3'>
-            <h1 className=' text-xl md:text-2xl lg:text-4xl font-bold leading-loose  md:leading-normal lg:leading-normal'>
+            <h1 className=' text-xl md:text-2xl lg:text-3xl font-bold leading-loose  md:leading-normal lg:leading-normal'>
               Hey There! I'm <span className='text-lightBlue'>Omar</span>. Front
               End Developer & Digital Content Creator.
             </h1>
