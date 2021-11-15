@@ -173,14 +173,7 @@ export default function Home({ projects }) {
                   transition: transition,
                 }}>
                 <Project
-                  image={
-                    <div className='relative w-60 h-60'>
-                      <CustomImage
-                        image={image.src}
-                        alt={project.frontmatter.title}
-                      />
-                    </div>
-                  }
+                  image={project.frontmatter.cover}
                   title={project.frontmatter.title}
                   description={project.frontmatter.description}
                   link={`/${project.id}`}
