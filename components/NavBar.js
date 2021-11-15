@@ -1,16 +1,16 @@
+import CustomImage from "./CustomImage";
 import CustomLink from "./CustomLink";
+import logo from "../public/images/logo.png";
 
 function NavBar() {
   return (
-    <div className='flex w-full justify-between p-4  mt-12  md:py-8  max-w-screen-xl mx-auto'>
+    <div className='flex w-full justify-between mt-12 px-4 md:px-6 lg:mt-4  md:py-8  max-w-screen-lg mx-auto'>
       <CustomLink
         link='/'
         icon={
-          <img
-            className='w-8 md:w-10'
-            src='http://localhost:1337/uploads/logo_40373f9c4b.png'
-            alt='logo'
-          />
+          <div className='relative w-12 h-12 lg:w-16 lg:h-16'>
+            <CustomImage image={logo.src} alt='logo omar code' />
+          </div>
         }></CustomLink>
 
       <div className='flex space-x-4 items-center '>

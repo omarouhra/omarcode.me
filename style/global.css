@@ -7,26 +7,22 @@
     @apply transition-all duration-500;
   }
   .statusTitle {
-    @apply text-sm font-custom font-bold text-lightBlue md:text-base mb-4;
+    @apply text-sm  font-bold text-lightBlue mb-2;
   }
 
   /* title */
 
   .title {
-    @apply text-xl md:text-3xl lg:text-4xl font-bold;
+    @apply text-xl md:text-xl lg:text-2xl font-bold;
   }
   .big-title {
     @apply text-2xl md:text-3xl lg:text-5xl font-semibold uppercase tracking-widest;
   }
 
-  /* text */
-  .text {
-    @apply text-sm  mt-12 leading-loose lg:leading-loose  md:text-base  text-gray-500 font-light;
-  }
 
   /* filter button */
   .filter {
-    @apply text-sm lg:text-base  font-semibold;
+    @apply text-sm lg:text-base  ;
   }
 
   /* project infos */
@@ -42,10 +38,7 @@
     @apply font-bold hover:text-blue-500 transitions;
   }
 
-  /* Section Spacing */
-  .spacing {
-    @apply my-12 md:my-16 lg:my-24;
-  }
+  
 }
 @layer utilities {
   .shadow {

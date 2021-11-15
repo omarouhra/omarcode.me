@@ -6,9 +6,18 @@ import Project from "../components/Project";
 import axios from "axios";
 import { useState } from "react";
 import { motion } from "framer-motion";
+import CustomImage from "../components/CustomImage";
+import HeroImage from "../public/images/hero.png";
+import Instagram from "../public/images/instagram.png";
 
-export default function Home({ Projects, Categories }) {
-  const [isActive, setIsActive] = useState(4);
+export default function Home() {
+  const [isActive, setIsActive] = useState(1);
+
+  const Categories = [
+    { id: 1, title: "Client project" },
+    { id: 2, title: "Clone" },
+    { id: 3, title: "Design" },
+  ];
 
   const transition = { duration: 0.7, ease: [0.4, 0.13, 0.23, 0.9] };
 
@@ -32,28 +41,38 @@ export default function Home({ Projects, Categories }) {
       <nav>
         <NavBar />
       </nav>
-      <main>
+      <main className='max-w-[1000px] mx-auto flex-col space-y-12 md:space-y-24 px-4 md:px-6'>
         {/* Hero section */}
-        <section className='max-w-screen-xl mx-auto flex flex-col px-4 lg:px-12   justify-center items-start mt-24 lg:mt-40'>
-          <h1 className=' text-xl md:text-3xl lg:text-5xl font-bold leading-loose md:w-4/6 lg:w-[80%] md:leading-normal lg:leading-normal'>
-            Hey There! I'm <span className='text-lightBlue'>Omar</span>. Front
-            End Developer & Digital Content Creator.
-          </h1>
-          <p className=' text-sm  mt-6 leading-normal sm:w-4/5 md:w-3/5 md:text-base  text-gray-500 font-light '>
-            I am 22 years old from Morocco. My mission is to scale up your Web
-            presence with high problem-solving skills and a huge passion for
-            design. User interfaces with meaningful UX are what I strongly
-            master!
-          </p>
-          <div className='flex space-x-6 mt-12'>
-            <CustomLink title='ABOUT ME' link='/aboutMe' />
-            <CustomLink title='MY RESUME' link='#' />
+
+        <section className='mt-12 flex flex-col space-y-12 md:space-y-0 md:flex-row md:justify-between md:items-start'>
+          <div className='lg:w-2/3'>
+            <h1 className=' text-xl md:text-2xl lg:text-4xl font-bold leading-loose  md:leading-normal lg:leading-normal'>
+              Hey There! I'm <span className='text-lightBlue'>Omar</span>. Front
+              End Developer & Digital Content Creator.
+            </h1>
+            <p className=' text-sm  mt-4 leading-normal md:leading-loose  md:text-base  text-gray-800 font-light '>
+              I am 22 years old from Morocco. My mission is to scale up your Web
+              presence with high problem-solving skills and a huge passion for
+              design. User interfaces with meaningful UX are what I strongly
+              master!
+            </p>
+            <div className='flex space-x-6 mt-6'>
+              <CustomLink title='ABOUT ME' link='/aboutMe' />
+              <CustomLink title='MY RESUME' link='#' />
+            </div>
+          </div>
+          <div className='relative w-52 h-52 '>
+            <CustomImage
+              image={HeroImage.src}
+              alt='Hero Image'
+              className='rounded-full'
+            />
           </div>
         </section>
 
         {/* status section */}
-        <section className=' max-w-screen-xl mx-auto flex flex-col px-4 lg:px-12 mt-12  space-y-12 lg:space-y-0 lg:flex-row  lg:justify-between lg:space-x-6'>
-          <div className='grid lg:grid-cols-3 space-y-12 lg:space-y-0  mlgspace-x-4 max-w-4xl lg:pt-24 '>
+        <section className='flex flex-col lg:space-y-0 lg:flex-row  lg:justify-between '>
+          <div className='flex flex-col space-y-6 md:flex-row md:space-y-0 '>
             <div>
               <p className='statusTitle'>CURRENTLY</p>
               <p className='text-sm font-light lg:w-2/3 '>
@@ -71,48 +90,60 @@ export default function Home({ Projects, Categories }) {
               <p className='text-sm font-light '>React Native</p>
             </div>
           </div>
-          <img
-            src='http://localhost:1337/uploads/IMG_7549_2_c49750688e.JPG'
-            alt='hero image'
-            className='rounded-md w-[400px] lg:h-[650px] lg:hover:shadow-2xl   transitions z-40'
-          />
         </section>
 
         {/* Skills Section */}
 
-        <section className=' max-w-screen-xl mx-auto bg-gradient-to-r from-darkBlue to-blue-900 text-white py-40 px-6 md:px-12  lg:px-24  xl:rounded-lg shadow spacing lg:-translate-y-44 '>
-          <div className=' max-w-screen-xl mx-auto text-white rounded-md '>
+        <section>
+          <div>
             <h2 className='title'>My Skills</h2>
-            <p className='text-sm font-light leading-normal my-8 md:text-base md:w-3/4'>
+            <p className='text-sm  mt-4 leading-normal md:leading-loose   md:text-base  text-gray-800 font-light  md:w-4/5'>
               As a developer, I am convinced that the way to be successful in
               such a crowded market is to always LEARN. But far away from the
               basics, I have dedicated the Big Majority of my time to practice
               and real applications. I love challenging myself & my creativity.
               Originality is my thing!
             </p>
-            <ul className='grid grid-cols-2 gap-5 lg:grid-cols-4 lg:gap-10 mt-12  font-bold'>
-              <li>. Javascript ES6</li>
-              <li>. HTML/CSS</li>
-              <li>. Headless CMS</li>
-              <li>. Firebase</li>
-              <li>. React.js / Redux</li>
-              <li>. Next.js</li>
-              <li>. Tailwindcss</li>
-              <li>. Git</li>
+            <ul className='grid grid-cols-2 gap-6 lg:grid-cols-4 lg:gap-10 mt-8  font-bold text-sm md:text-base'>
+              <li>
+                <span className='text-lightBlue text-xl'>.</span> Javascript ES6
+              </li>
+              <li>
+                <span className='text-lightBlue text-xl'>.</span> HTML/CSS
+              </li>
+              <li>
+                <span className='text-lightBlue text-xl'>.</span> Headless CMS
+              </li>
+              <li>
+                <span className='text-lightBlue text-xl'>.</span> Firebase
+              </li>
+              <li>
+                <span className='text-lightBlue text-xl'>.</span> React.js /
+                Redux
+              </li>
+              <li>
+                <span className='text-lightBlue text-xl'>.</span> Next.js
+              </li>
+              <li>
+                <span className='text-lightBlue text-xl'>.</span> Tailwindcss
+              </li>
+              <li>
+                <span className='text-lightBlue text-xl'>.</span> Git
+              </li>
             </ul>
           </div>
         </section>
 
         {/* Project Section */}
-        <section className=' max-w-screen-xl mx-auto px-4  md:px-12   spacing'>
+        <section className=''>
           <h2 className='title'>Recent Work </h2>
-          <p className='text-sm  mt-6 lg:mt-12 leading-normal sm:w-4/5 md:w-3/5 md:text-base lg:leading-relaxed  text-gray-500 font-light '>
+          <p className='text-sm  mt-6 lg:mt-12 leading-normal md:leading-loose  sm:w-4/5 md:w-3/5 md:text-base  text-gray-800 font-light  '>
             I like to stay busy and always have a project in the works. Take a
             look at some of the applications, articles, and companies I've
             dedicated my time to.
           </p>
-          <div className='flex space-x-4 lg:space-x-12 mt-16 lg:mt-24'>
-            {/* {Categories.map(filter => (
+          <div className='flex space-x-4 lg:space-x-12 mt-8 '>
+            {Categories.map(filter => (
               <div key={filter.id}>
                 <button
                   onClick={() => {
@@ -120,13 +151,13 @@ export default function Home({ Projects, Categories }) {
                   }}
                   className={
                     isActive === filter.id
-                      ? "filter text-black  transitions "
+                      ? "filter text-black  transitions"
                       : "filter text-gray-300 transitions"
                   }>
                   {filter.title}
                 </button>
               </div>
-            ))} */}
+            ))}
           </div>
 
           <div className='grid grid-cols-1 md:grid-cols-2 gap-12 my-16 lg:my-20'>
@@ -159,7 +190,7 @@ export default function Home({ Projects, Categories }) {
 
         {/* Work Process Section */}
 
-        <section className=' max-w-screen-xl mx-auto px-4 md:px-12   spacing flex flex-col space-y-12 lg:flex-row lg:space-y-0  lg:items-center lg:justify-between'>
+        <section className=' flex flex-col space-y-12 lg:flex-row lg:space-y-0  lg:items-center lg:justify-between'>
           <div className='lg:w-1/2'>
             <p className='text-xs text-blue-500'>
               {" "}
@@ -177,7 +208,7 @@ export default function Home({ Projects, Categories }) {
 
         {/* Instagram Section */}
 
-        <section className=' max-w-screen-xl mx-auto px-4 md:px-12  spacing flex flex-col space-y-12 lg:flex-row lg:space-y-0 lg:spacex12 lg:items-center lg:justify-between'>
+        <section className='flex flex-col space-y-12 lg:flex-row lg:space-y-0 lg:spacex-12 lg:items-center lg:justify-between'>
           <div>
             <h2 className='title'>
               I’m a lot cooler on{" "}
@@ -191,18 +222,19 @@ export default function Home({ Projects, Categories }) {
               newTab
             />
           </div>
-          <img
-            src='http://localhost:1337/uploads/insta_ad028358cd.png'
-            alt='hero image'
-            className='w-2/3 lg:w-1/2'
-          />
+          <div className='h-60 w-full md:w-1/2'>
+            <div className='relative w-full  h-60'>
+              <CustomImage image={Instagram.src} alt='Instagram image' className='object-contain' />
+            </div>
+          </div>
         </section>
-      </main>
 
       {/* Footer */}
 
       <Footer />
+      </main>
+
+     
     </motion.div>
   );
 }
-
