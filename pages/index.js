@@ -28,7 +28,7 @@ export default function Home({ projects }) {
       initial={{ opacity: 0 }}
       animate={{ opacity: 1, transition: transition }}
       exit={{ opacity: 0 }}
-      className='flex flex-col h-screen bg-white max-w-[1000px] mx-auto px-4 md:px-6 antialiased'>
+      className='flex flex-col h-screen bg-white max-w-[950px] mx-auto px-4 md:px-12 lg:px-0 antialiased'>
       <Head>
         <title>Omar Ouhra - Front End Developer </title>
         <link rel='icon' href='/favicon.ico' />
@@ -46,7 +46,7 @@ export default function Home({ projects }) {
       <main className=' flex-col space-y-12 md:space-y-24 '>
         {/* Hero section */}
 
-        <section className='mt-12 flex flex-col space-y-12 md:space-y-0 md:flex-row md:justify-between md:items-start'>
+        <section className='mt-12 flex flex-col space-y-12 lg:space-y-0 lg:flex-row lg:justify-between lg:items-start'>
           <div className='lg:w-2/3'>
             <h1 className=' text-xl md:text-2xl lg:text-3xl font-bold leading-loose  md:leading-normal lg:leading-normal'>
               Hey There! I'm <span className='text-lightBlue'>Omar</span>. Front
@@ -74,22 +74,22 @@ export default function Home({ projects }) {
 
         {/* status section */}
         <section className='flex flex-col lg:space-y-0 lg:flex-row  lg:justify-between '>
-          <div className='flex flex-col space-y-6 md:flex-row md:space-y-0 '>
+          <div className='flex flex-col space-y-6 lg:flex-row lg:space-y-0  '>
             <div>
               <p className='statusTitle'>CURRENTLY</p>
-              <p className='text-sm font-light lg:w-2/3 '>
+              <p className='text-sm  lg:w-2/3 '>
                 Freelance Front End Dev, Content creator at W&S
               </p>
             </div>
             <div>
               <p className='statusTitle'>ON THE SIDE</p>
-              <p className='text-sm font-light lg:w-2/3'>
+              <p className='text-sm  lg:w-2/3'>
                 Finishing my last year of software enginnering
               </p>
             </div>
             <div>
               <p className='statusTitle'>LEARINING ABOUT</p>
-              <p className='text-sm font-light '>React Native</p>
+              <p className='text-sm  '>React Native</p>
             </div>
           </div>
         </section>
