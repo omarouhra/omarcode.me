@@ -9,16 +9,18 @@ import { motion } from "framer-motion";
 import CustomImage from "../components/CustomImage";
 import HeroImage from "../public/images/hero.png";
 import Instagram from "../public/images/instagram.png";
+import fs from "fs";
+import path from "path";
+import matter from "gray-matter";
+import image from "../public/images/projects/project-1.png";
 
-export default function Home() {
+export default function Home({ projects }) {
   const [isActive, setIsActive] = useState(1);
-
   const Categories = [
     { id: 1, title: "Client project" },
     { id: 2, title: "Clone" },
     { id: 3, title: "Design" },
   ];
-
   const transition = { duration: 0.7, ease: [0.4, 0.13, 0.23, 0.9] };
 
   return (
@@ -38,7 +40,7 @@ export default function Home() {
         />
       </Head>
       {/* Navbar */}
-      <nav >
+      <nav>
         <NavBar />
       </nav>
       <main className=' flex-col space-y-12 md:space-y-24 '>
@@ -161,30 +163,30 @@ export default function Home() {
           </div>
 
           <div className='grid grid-cols-1 md:grid-cols-2 gap-12 my-16 lg:my-20'>
-            {/* {Projects.map(project =>
-              project.type.id === isActive ? (
-                <motion.div
-                  key={project.id}
-                  initial={{ opacity: 0, y: 20 }}
-                  animate={{
-                    opacity: 1,
-                    y: 0,
-                    transition: transition,
-                  }}>
-                  <Project
-                    image={
-                      project.image
-                        ? `http://localhost:1337${project.image.url}`
-                        : null
-                    }
-                    imageAlt={project.image ? project.image.name : null}
-                    title={project.title}
-                    description={project.description}
-                    link={`/${project.id}`}
-                  />
-                </motion.div>
-              ) : null
-            )} */}
+            {projects.map((project, index) => (
+              <motion.div
+                key={index}
+                initial={{ opacity: 0, y: 20 }}
+                animate={{
+                  opacity: 1,
+                  y: 0,
+                  transition: transition,
+                }}>
+                <Project
+                  image={
+                    <div className='relative w-60 h-60'>
+                      <CustomImage
+                        image={image.src}
+                        alt={project.frontmatter.title}
+                      />
+                    </div>
+                  }
+                  title={project.frontmatter.title}
+                  description={project.frontmatter.description}
+                  link={`/${project.id}`}
+                />
+              </motion.div>
+            ))}
           </div>
         </section>
 
@@ -238,4 +240,34 @@ export default function Home() {
       <Footer />
     </motion.div>
   );
+}
+
+export async function getStaticProps() {
+  //  get files from projects directory
+  const files = fs.readdirSync(path.join("projects"));
+
+  // Get slug and frontmatter from posts
+  const projects = files.map(filename => {
+    // Create slug
+    const slug = filename.replace(".md", "");
+
+    // Get frontmatter
+    const markdownWithMeta = fs.readFileSync(
+      path.join("projects", filename),
+      "utf-8"
+    );
+
+    const { data: frontmatter } = matter(markdownWithMeta);
+
+    return {
+      slug,
+      frontmatter,
+    };
+  });
+
+  return {
+    props: {
+      projects: projects,
+    },
+  };
 }
