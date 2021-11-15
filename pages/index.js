@@ -224,17 +224,18 @@ export default function Home() {
           </div>
           <div className='h-60 w-full md:w-1/2'>
             <div className='relative w-full  h-60'>
-              <CustomImage image={Instagram.src} alt='Instagram image' className='object-contain' />
+              <CustomImage
+                image={Instagram.src}
+                alt='Instagram image'
+                className='object-contain'
+              />
             </div>
           </div>
         </section>
-
+      </main>
       {/* Footer */}
 
       <Footer />
-      </main>
-
-     
     </motion.div>
   );
 }
