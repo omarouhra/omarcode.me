@@ -12,7 +12,7 @@ import Instagram from "../public/images/instagram.png";
 import fs from "fs";
 import path from "path";
 import matter from "gray-matter";
-import image from "../public/images/projects/project-1.png";
+import processGif from "../public/images/gif.gif";
 
 export default function Home({ projects }) {
   const [isActive, setIsActive] = useState(1);
@@ -190,7 +190,7 @@ export default function Home({ projects }) {
 
         {/* Work Process Section */}
 
-        <section className=' flex flex-col space-y-12 lg:flex-row lg:space-y-0  lg:items-center lg:justify-between'>
+        <section className=' flex flex-col  space-y-12 lg:flex-row lg:space-y-0  lg:items-center lg:justify-between'>
           <div className='lg:w-1/2'>
             <p className='text-xs text-blue-500'>
               {" "}
@@ -198,12 +198,13 @@ export default function Home({ projects }) {
             </p>
             <h2 className='title'>Its a mix of these things.</h2>
           </div>
-
-          <img
-            src='http://localhost:1337/uploads/process_00fbc4eb3c.gif'
-            alt='process gif'
-            className='lg:w-1/2'
-          />
+          <div className=' relative h-[250px] md:h-[400px]  md:w-1/2'>
+            <CustomImage
+              image={processGif}
+              alt='process'
+              className='object-contain'
+            />
+          </div>
         </section>
 
         {/* Instagram Section */}
