@@ -1,8 +1,8 @@
 ---
-title: "EcoTopo"
-category: 1
+title: "Food App desing"
+category: 3
 description: "In this review, we will be looking at the new Python book from Oriley"
-cover: "/images/projects/project-2.png"
+cover: "/images/projects/desing-1.png"
 ---
 
 Lorem markdownum fine incustoditam unda factura versum occuluere Aeneas, iuvat
