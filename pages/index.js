@@ -76,7 +76,7 @@ export default function Home({ projects }) {
               alt='Hero Image'
               className='rounded-full'
             />
-            <button className='absolute bottom-0 right-1' onClick={playAudio}>
+            <button className='hidden md:inline absolute bottom-0 right-1' onClick={playAudio}>
               <img
                 src='https://www.svgrepo.com/show/6128/play-buton.svg'
                 alt='play audio button'
