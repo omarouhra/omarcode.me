@@ -13,15 +13,17 @@ import { marked } from "marked";
 import CustomImage from "../components/CustomImage";
 
 function page({
-  frontmatter: { title, preview, paragraph, role, devStack, live },
+  projects,
+  frontmatter: { title, preview, paragraph, role, devStack, live, category },
   slug,
   content,
 }) {
   const transition = { duration: 0.7, ease: [0.4, 0.13, 0.23, 0.9] };
-
-  // const otherPosts = projects.filter(
-  //   article => article.id != project.id && article.type.id === project.type.id
-  // );
+  const otherPosts = projects.filter(
+    article =>
+      article.frontmatter.title != title &&
+      article.frontmatter.category === category
+  );
   return (
     <motion.div
       initial={{ opacity: 0 }}
@@ -48,9 +50,7 @@ function page({
           <h2 className=' mt-10 text-xl md:text-2xl lg:text-3xl font-bold'>
             {title}
           </h2>
-          <p className='text'>
-            {paragraph}
-          </p>
+          <p className='text'>{paragraph}</p>
           <div className='flex flex-col lg:space-y-0 lg:flex-row  lg:justify-between mt-12 '>
             <div className='flex flex-col space-y-6 lg:flex-row lg:space-y-0 lg:space-x-12 '>
               <div className='w-40'>
@@ -72,7 +72,32 @@ function page({
         <div className='relative w-full h-[400px] md:h-[500px] lg:h-[1200px]'>
           <CustomImage image={preview} alt={title} className='object-contain' />
         </div>
-        <div className='markdown' dangerouslySetInnerHTML={{ __html: marked(content) }}></div>
+        <div
+          className='markdown'
+          dangerouslySetInnerHTML={{ __html: marked(content) }}></div>
+        <div>
+          <h2 className='title'>Other post</h2>
+          <div className='grid grid-cols-1 md:grid-cols-2 gap-12 my-16 lg:my-20'>
+            {otherPosts.map((project, index) => (
+              <motion.div
+                key={index}
+                initial={{ opacity: 0, y: 20 }}
+                animate={{
+                  opacity: 1,
+                  y: 0,
+                  transition: transition,
+                }}>
+                <Project
+                  image={project.frontmatter.cover}
+                  imageAlt={project.frontmatter.title}
+                  title={project.frontmatter.title}
+                  description={project.frontmatter.description}
+                  link={`/${project.slug}`}
+                />
+              </motion.div>
+            ))}
+          </div>
+        </div>
       </main>
 
       {/* Footer */}
@@ -106,12 +131,34 @@ export async function getStaticProps({ params: { slug } }) {
   );
 
   const { data: frontmatter, content } = matter(markdownWithMeta);
+  //  get files from projects directory
+  const files = fs.readdirSync(path.join("projects"));
+
+  // Get slug and frontmatter from posts
+  const projects = files.map(filename => {
+    // Create slug
+    const slug = filename.replace(".md", "");
+
+    // Get frontmatter
+    const markdownWithMeta = fs.readFileSync(
+      path.join("projects", filename),
+      "utf-8"
+    );
+
+    const { data: frontmatter } = matter(markdownWithMeta);
+
+    return {
+      slug,
+      frontmatter,
+    };
+  });
 
   return {
     props: {
       frontmatter,
       slug,
       content,
+      projects,
     },
   };
 }

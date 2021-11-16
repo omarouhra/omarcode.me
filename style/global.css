@@ -45,7 +45,7 @@
   /* Markdown styling */
 
   .markdown > h3 {
-    @apply title mb-4;
+    @apply title mt-6 mb-2;
   }
   .markdown > p {
     @apply text mb-4;

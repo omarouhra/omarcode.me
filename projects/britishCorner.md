@@ -10,40 +10,15 @@ devStack: "HTMl, CSS, Javascript"
 live: "https://www.britishcorneragency.com"
 ---
 
-### Magnorum nulla avertit pedem neque monimenta terram
+### What the client thinks
 
-Quo numquam, nunc [concussaque](http://mox-cunctos.net/), hora effugit mihi,
-pectore. Hinc fausto, circumspicit cadas; virilibus rapui, timidum rorat cuique
-animorum ac! Quem sit. Venit qui, rex sibi tota, peto _fortis ira suis_ dolusque
-simulatque [incipit crudelesque
-pavens](http://www.corpora.com/terrae-oscula.html) spatiosa conlegit oscula
-equam.
+I like the punctuality! I am very happy with what we had done. Omar has a great customer service, he listens and tries to understand. And that what makes the service good.
+**Khawla Adami - CEO**
 
-## Mensis idem
+### Project's Goal
 
-Caelestia Ganymedes gentis. Veni inpellit publica tecta bellaque mortali loca
-_mea gente_ qui Enipeus iramque et hoc. _Altera Rex vetitum_; hoc magis dolores
-precor nec. Ubi verba, et aras regia, cognoscere vites tempusque expers, heros?
+My mission was to design & code a website to introduce the British Corner Agency and to highlight their services seeking the best education experience in UK. The creation of the logo was my mission too!
 
-## Mihi puto pallorem
+### Challenges
 
-Hac forma, habeo quam et patria, ille tulit volat quamquam vulnus, aere est.
-Ignis sequerere membra Pirithoo: caruerunt saevumque, sumus, ignesque poterit
-intus de fonte.
-
-## Quondam montibus tua spes consilioque nata consilioque
-
-Abigitque limite. Ipsa levis extulit munera, litora, ira pavet in morte, **te
-in** quas [vix](http://auxiliumquefando.net/vocibus-cum). Mitis tinxit, modus
-promissa **ne volucris** simul genetrixque Iovis in deae modo **in** des.
-_Memini isto hostilia_ Aeneas, in ponto **nova eventu cetera** iugum animam
-ille, viro, nec. Loquendi aves insisto saecula premente nec, at ego poscit ubi
-sub!
-
-- Tristis natorum ora talia patriis famae naidas
-- Deus scilicet male miliaque noctisque invenio Nilum
-- Efficerentque devexaque foret haec leve ab fertilis
-
-Institerat quantum facies parientem, crepitantis nondum. Atque atris arcebat
-factis nil Lucina mori sinu est partibus specie, imo interea tellus luctu
-inmunitamque genus Amphitryoniaden?
+From a design angle, the challenge was to combine the useful and the enjoyable. A lot of informations in a beautiful simple pattern was not the easiest plan! The coding phase was supported by modern CSS which made the code clean & well structured.
