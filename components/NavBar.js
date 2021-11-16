@@ -8,7 +8,7 @@ function NavBar() {
       <CustomLink
         link='/'
         icon={
-          <div className='relative w-12 h-12 lg:w-16 lg:h-16'>
+          <div className='relative w-12 h-12 lg:w-16 lg:h-16 -translate-x-2 lg:-translate-x-3'>
             <CustomImage image={logo.src} alt='logo omar code' />
           </div>
         }></CustomLink>

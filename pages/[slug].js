@@ -10,8 +10,13 @@ import fs from "fs";
 import path from "path";
 import matter from "gray-matter";
 import { marked } from "marked";
+import CustomImage from "../components/CustomImage";
 
-function page({ frontmatter: { title }, slug, content }) {
+function page({
+  frontmatter: { title, preview, paragraph, role, devStack, live },
+  slug,
+  content,
+}) {
   const transition = { duration: 0.7, ease: [0.4, 0.13, 0.23, 0.9] };
 
   // const otherPosts = projects.filter(
@@ -21,7 +26,8 @@ function page({ frontmatter: { title }, slug, content }) {
     <motion.div
       initial={{ opacity: 0 }}
       animate={{ opacity: 1, transition: transition }}
-      exit={{ opacity: 0 }}>
+      exit={{ opacity: 0 }}
+      className='flex flex-col h-screen  max-w-[900px] mx-auto px-4 md:px-12 lg:px-0 antialiased'>
       <Head>
         <title> page</title>
         <link rel='icon' href='/favicon.ico' />
@@ -34,13 +40,38 @@ function page({ frontmatter: { title }, slug, content }) {
       </Head>
       <NavBar />
 
-      <main>
+      <main className='flex-col space-y-12 md:space-y-24 '>
         {/* Project Hero */}
-        <section className='max-w-screen-xl mx-auto flex flex-col px-4 lg:px-12   justify-center items-start mt-20 lg:mt-32'>
-          <CustomLink link='/' title='←' big />
 
-          <h2 className='big-title mt-4 lg:mt-12'>{title} hek</h2>
+        <section>
+          <CustomLink link='/' title='←' big />
+          <h2 className=' mt-10 text-xl md:text-2xl lg:text-3xl font-bold'>
+            {title}
+          </h2>
+          <p className='text-sm  mt-4  leading-normal md:leading-loose  md:text-base  text-gray-800 font-normal '>
+            {paragraph}
+          </p>
+          <div className='flex flex-col lg:space-y-0 lg:flex-row  lg:justify-between mt-12 '>
+            <div className='flex flex-col space-y-6 lg:flex-row lg:space-y-0 lg:space-x-12 '>
+              <div className='w-40'>
+                <p className='statusTitle'>ROLE</p>
+                <p className='text-sm'>{role}</p>
+              </div>
+              <div className='w-40'>
+                <p className='statusTitle'>DEV STACK</p>
+                <p className='text-sm  lg:w-2/3'>{devStack}</p>
+              </div>
+              <div>
+                <p className='statusTitle'>LIVE</p>
+                <CustomLink link={live} title='View Site' newTab />
+              </div>
+            </div>
+          </div>
         </section>
+
+        <div className='relative w-full h-[400px] md:h-[500px] lg:h-[1200px]'>
+          <CustomImage image={preview} alt={title} className='object-contain' />
+        </div>
       </main>
 
       {/* Footer */}

@@ -140,7 +140,7 @@ export default function Home({ projects }) {
         {/* Project Section */}
         <section className=''>
           <h2 className='title'>Recent Work </h2>
-          <p className='text-sm  mt-6  leading-normal md:leading-loose  sm:w-4/5 md:w-3/5 md:text-base  text-gray-800 font-normal  '>
+          <p className='text-sm  mt-6  leading-normal md:leading-loose  sm:w-4/5 md:w-4/5 md:text-base  text-gray-800 font-normal  '>
             I like to stay busy and always have a project in the works. Take a
             look at some of the applications, articles, and companies I've
             dedicated my time to.

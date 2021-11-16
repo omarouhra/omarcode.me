@@ -2,7 +2,12 @@
 title: "British Corner"
 category: 1
 description: "We will look at 10 simple tips and tricks to increase the speed of your code when writing JS"
+paragraph: "A single page application for introducing the British Corner Agency. Based in Morocco, this agency provides consultation to students interested in UK universities. Right after getting the full scope of the project, the exciting process of creating an intuitive & fresh interface began. You may want to take a look at the cool result below!"
 cover: "/images/projects/project-1.png"
+preview: "/images/preview/preview-1.png"
+role: "UI/UX desinger& front end developer"
+devStack: "HTMl, CSS, Javascript"
+live: "www.britishcorneragency.com"
 ---
 
 Lorem [markdownum](http://insunt.org/inpositaque), et sanguine rutilos dixit
