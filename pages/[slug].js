@@ -74,7 +74,7 @@ function page({
         <div>
           <h2 className='title'>Other post</h2>
           <div className='grid grid-cols-1 md:grid-cols-2 gap-12 my-16 lg:my-20'>
-            {otherPosts.map((project, index) => (
+            {otherPosts.slice(0,2).map((project, index) => (
               <motion.div
                 key={index}
                 initial={{ opacity: 0, y: 20 }}
