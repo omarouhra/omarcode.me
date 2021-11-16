@@ -6,8 +6,12 @@ import Project from "../components/Project";
 import { useState } from "react";
 import axios from "axios";
 import { motion } from "framer-motion";
+import fs from "fs";
+import path from "path";
+import matter from "gray-matter";
+import { marked } from "marked";
 
-function page() {
+function page({ frontmatter: { title }, slug, content }) {
   const transition = { duration: 0.7, ease: [0.4, 0.13, 0.23, 0.9] };
 
   // const otherPosts = projects.filter(
@@ -35,7 +39,7 @@ function page() {
         <section className='max-w-screen-xl mx-auto flex flex-col px-4 lg:px-12   justify-center items-start mt-20 lg:mt-32'>
           <CustomLink link='/' title='←' big />
 
-          <h2 className='big-title mt-4 lg:mt-12'>Project Page</h2>
+          <h2 className='big-title mt-4 lg:mt-12'>{title} hek</h2>
         </section>
       </main>
 
@@ -47,3 +51,35 @@ function page() {
 }
 
 export default page;
+
+export async function getStaticPaths() {
+  const files = fs.readdirSync(path.join("projects"));
+
+  const paths = files.map(filename => ({
+    params: {
+      slug: filename.replace(".md", ""),
+    },
+  }));
+
+  return {
+    paths,
+    fallback: false,
+  };
+}
+
+export async function getStaticProps({ params: { slug } }) {
+  const markdownWithMeta = fs.readFileSync(
+    path.join("projects", slug + ".md"),
+    "utf-8"
+  );
+
+  const { data: frontmatter, content } = matter(markdownWithMeta);
+
+  return {
+    props: {
+      frontmatter,
+      slug,
+      content,
+    },
+  };
+}

@@ -28,12 +28,12 @@ export default function Home({ projects }) {
       initial={{ opacity: 0 }}
       animate={{ opacity: 1, transition: transition }}
       exit={{ opacity: 0 }}
-      className='flex flex-col h-screen bg-white max-w-[950px] mx-auto px-4 md:px-12 lg:px-0 antialiased'>
+      className='flex flex-col h-screen  max-w-[900px] mx-auto px-4 md:px-12 lg:px-0 antialiased'>
       <Head>
         <title>Omar Ouhra - Front End Developer </title>
         <link rel='icon' href='/favicon.ico' />
         <link rel='preconnect' href='https://fonts.googleapis.com' />
-        <link rel='preconnect' href='https://fonts.gstatic.com' crossorigin />
+        <link rel='preconnect' href='https://fonts.gstatic.com' crossOrigin />
         <link
           href='https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;600;700;800&display=swap'
           rel='stylesheet'
@@ -179,7 +179,7 @@ export default function Home({ projects }) {
                       imageAlt={project.frontmatter.title}
                       title={project.frontmatter.title}
                       description={project.frontmatter.description}
-                      link={`/${project.id}`}
+                      link={`/${project.frontmatter.slug}`}
                     />
                   </motion.div>
                 ) : null}
