@@ -19,6 +19,11 @@ I like the punctuality! I am very happy with what we had done. Omar has a great 
 
 My mission was to design & code a website to introduce the British Corner Agency and to highlight their services seeking the best education experience in UK. The creation of the logo was my mission too!
 
+### Dev Stack
+
+- Next.js
+- Tailwind CSS
+
 ### Challenges
 
 From a design angle, the challenge was to combine the useful and the enjoyable. A lot of informations in a beautiful simple pattern was not the easiest plan! The coding phase was supported by modern CSS which made the code clean & well structured.

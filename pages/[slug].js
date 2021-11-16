@@ -53,13 +53,9 @@ function page({
           <p className='text'>{paragraph}</p>
           <div className='flex flex-col lg:space-y-0 lg:flex-row  lg:justify-between mt-12 '>
             <div className='flex flex-col space-y-6 lg:flex-row lg:space-y-0 lg:space-x-12 '>
-              <div className='w-40'>
+              <div className='lg:w-32' >
                 <p className='statusTitle'>ROLE</p>
                 <p className='text-sm'>{role}</p>
-              </div>
-              <div className='w-40'>
-                <p className='statusTitle'>DEV STACK</p>
-                <p className='text-sm  lg:w-2/3'>{devStack}</p>
               </div>
               <div>
                 <p className='statusTitle'>LIVE</p>

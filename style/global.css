@@ -45,10 +45,13 @@
   /* Markdown styling */
 
   .markdown > h3 {
-    @apply title mt-6 mb-2;
+    @apply title mt-6 mb-2 text-blue-500;
   }
   .markdown > p {
     @apply text mb-4;
+  }
+  .markdown > ul {
+    @apply list-disc px-4 lg:px-6 font-bold text-darkBlue;
   }
 }
 @layer utilities {

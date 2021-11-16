@@ -7,12 +7,25 @@ if you tend to minimal interfaces, then i selectively invite you to see this ONE
 cover: "/images/projects/project-2.png"
 preview: "/images/preview/preview-2.png"
 role: "UI/UX desinger & front end developer"
-devStack: "React.js, Django Rest Framework"
-live: "www.ecotopo.ma"
+live: "https://www.ecotopo.ma"
 ---
 
-### What the client thinks 
-lorem
-lorem
-lorem
-lorem
+### What the client thinks
+
+I like the punctuality! I am very happy with what we had done. Omar has a great customer service, he listens and tries to understand. And that what makes the service good.
+**Khawla Adami - CEO**
+
+### Dev Stack
+
+- React.js
+- Django Rest Framework
+- Netlify
+- Heroku
+
+### Project's Goal
+
+My mission was to design & code a website to introduce the British Corner Agency and to highlight their services seeking the best education experience in UK. The creation of the logo was my mission too!
+
+### Challenges
+
+From a design angle, the challenge was to combine the useful and the enjoyable. A lot of informations in a beautiful simple pattern was not the easiest plan! The coding phase was supported by modern CSS which made the code clean & well structured.
