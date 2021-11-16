@@ -7,7 +7,7 @@ cover: "/images/projects/project-3.png"
 preview: "/images/preview/preview-3.png"
 role: "front end developer"
 devStack: "Next.js, Tailwindcss"
-live: "https://www.britishcorneragency.com"
+live: "https://www.stockrepublic.io/"
 ---
 
 ### What the client thinks
