@@ -4,7 +4,7 @@ category: 2
 description: "We will look at 10 simple tips and tricks to increase the speed of your code when writing JS"
 paragraph: "This project's aim was to build an Airbnb clone. I have proudly worked on redeveloping the most popular websites and this is definitely one of the greatest!  The solution of connecting hosts and travellers already exists, but it's redoing is a real Bonus!"
 cover: "/images/projects/clone-2.png"
-preview: "/images/preview/instagram-p.png"
+preview: "/images/preview/insta-p.png"
 role: "front end developer"
 devStack: "Next.js, Tailwind CSS, Calendar Picker, Mapbox, Vercel"
 live: "https://airbnb-next-js-clone.vercel.app/"
