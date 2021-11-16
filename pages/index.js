@@ -23,6 +23,7 @@ export default function Home({ projects }) {
   ];
   const transition = { duration: 0.7, ease: [0.4, 0.13, 0.23, 0.9] };
 
+
   return (
     <motion.div
       initial={{ opacity: 0 }}
@@ -179,7 +180,7 @@ export default function Home({ projects }) {
                       imageAlt={project.frontmatter.title}
                       title={project.frontmatter.title}
                       description={project.frontmatter.description}
-                      link={`/${project.frontmatter.slug}`}
+                      link={`/${project.slug}`}
                     />
                   </motion.div>
                 ) : null}
