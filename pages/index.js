@@ -3,7 +3,6 @@ import CustomLink from "../components/CustomLink";
 import Footer from "../components/Footer";
 import NavBar from "../components/NavBar";
 import Project from "../components/Project";
-import axios from "axios";
 import { useState } from "react";
 import { motion } from "framer-motion";
 import CustomImage from "../components/CustomImage";
@@ -13,6 +12,8 @@ import fs from "fs";
 import path from "path";
 import matter from "gray-matter";
 import processGif from "../public/images/gif.gif";
+import { Howl, Howler } from "howler";
+// import Audio from "../public/audio.mp3";
 
 export default function Home({ projects }) {
   const [isActive, setIsActive] = useState(1);
@@ -22,8 +23,12 @@ export default function Home({ projects }) {
     { id: 3, title: "Design" },
   ];
   const transition = { duration: 0.7, ease: [0.4, 0.13, 0.23, 0.9] };
-
-
+  const playAudio = () => {
+    let sound = new Howl({
+      src: "/audio.mp3",
+    });
+    sound.play();
+  };
   return (
     <motion.div
       initial={{ opacity: 0 }}
@@ -64,12 +69,20 @@ export default function Home({ projects }) {
               <CustomLink title='MY RESUME' link='#' />
             </div>
           </div>
+
           <div className='relative w-52 h-52 '>
             <CustomImage
               image={HeroImage.src}
               alt='Hero Image'
               className='rounded-full'
             />
+            <button className='absolute bottom-0 right-1' onClick={playAudio}>
+              <img
+                src='https://www.svgrepo.com/show/6128/play-buton.svg'
+                alt='play audio button'
+                className='w-10 h-10 '
+              />
+            </button>
           </div>
         </section>
 
