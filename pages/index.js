@@ -75,7 +75,7 @@ export default function Home({ projects }) {
 
         {/* status section */}
         <section className='flex flex-col lg:space-y-0 lg:flex-row  lg:justify-between '>
-          <div className='flex flex-col space-y-6 lg:flex-row lg:space-y-0  '>
+          <div className='flex flex-col space-y-6 lg:flex-row lg:space-y-0 font-semibold '>
             <div>
               <p className='statusTitle'>CURRENTLY</p>
               <p className='text-sm  lg:w-2/3 '>

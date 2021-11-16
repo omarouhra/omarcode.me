@@ -8,6 +8,7 @@ preview: "/images/preview/google-p.png"
 role: "front end developer"
 devStack: "Next.js, Tailwind CSS, Vercel"
 live: "https://omaramazon.vercel.app/"
+repo: "https://github.com/omarouhra/Google-Next.Js-CLone"
 ---
 
 ### Project's Goal

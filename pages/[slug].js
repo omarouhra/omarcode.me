@@ -14,7 +14,7 @@ import CustomImage from "../components/CustomImage";
 
 function page({
   projects,
-  frontmatter: { title, preview, paragraph, role, devStack, live, category },
+  frontmatter: { title, preview, paragraph, role, live, repo, category },
   slug,
   content,
 }) {
@@ -52,15 +52,22 @@ function page({
           </h2>
           <p className='text'>{paragraph}</p>
           <div className='flex flex-col lg:space-y-0 lg:flex-row  lg:justify-between mt-12 '>
-            <div className='flex flex-col space-y-6 lg:flex-row lg:space-y-0 lg:space-x-12 '>
-              <div className='lg:w-32' >
+            <div className='flex flex-col space-y-6 lg:flex-row lg:space-y-0 lg:space-x-12  lg:items-center'>
+              <div className='lg:w-38'>
                 <p className='statusTitle'>ROLE</p>
-                <p className='text-sm'>{role}</p>
+                <p className='text-sm lg:pt-1 font-semibold '>{role}</p>
               </div>
               <div>
                 <p className='statusTitle'>LIVE</p>
                 <CustomLink link={live} title='View Site' newTab />
               </div>
+
+              {repo ? (
+                <div>
+                  <p className='statusTitle'>CODE</p>
+                  <CustomLink link={repo} title='Git Repo' newTab />
+                </div>
+              ) : null}
             </div>
           </div>
         </section>
@@ -74,7 +81,7 @@ function page({
         <div>
           <h2 className='title'>Other post</h2>
           <div className='grid grid-cols-1 md:grid-cols-2 gap-12 my-16 lg:my-20'>
-            {otherPosts.slice(0,2).map((project, index) => (
+            {otherPosts.slice(0, 2).map((project, index) => (
               <motion.div
                 key={index}
                 initial={{ opacity: 0, y: 20 }}

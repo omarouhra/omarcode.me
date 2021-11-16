@@ -8,6 +8,7 @@ preview: "/images/preview/amazon-p.png"
 role: "front end developer"
 devStack: "Next.js, Tailwind CSS, Vercel"
 live: "https://omaramazon.vercel.app/"
+repo: "https://github.com/omarouhra/Amazon-clone-Next.js-Tailwind-css"
 ---
 
 ### Project's Goal

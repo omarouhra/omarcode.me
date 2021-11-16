@@ -8,6 +8,7 @@ preview: "/images/preview/instagram-p.png"
 role: "front end developer"
 devStack: "Next.js, Tailwind CSS, Calendar Picker, Mapbox, Vercel"
 live: "https://airbnb-next-js-clone.vercel.app/"
+repo: "https://github.com/omarouhra/Instsgram-clone-Next.js-Tailwind.css"
 ---
 
 ### Project's Goal
