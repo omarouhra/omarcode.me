@@ -6,7 +6,7 @@ paragraph: "This project's aim was to build an Airbnb clone. I have proudly work
 cover: "/images/projects/clone-1.png"
 preview: "/images/preview/airbnb-p.png"
 role: "front end developer"
-live: "https://airbnb-next-js-clone.vercel.app/"
+live: "https://omarcodeairbnb.vercel.app/"
 repo: "https://github.com/omarouhra/Airbnb-Next.Js-Clone"
 ---
 
