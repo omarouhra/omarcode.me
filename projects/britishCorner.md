@@ -7,20 +7,10 @@ cover: "/images/projects/project-1.png"
 preview: "/images/preview/preview-1.png"
 role: "UI/UX desinger& front end developer"
 devStack: "HTMl, CSS, Javascript"
-live: "www.britishcorneragency.com"
+live: "https://www.britishcorneragency.com"
 ---
 
-Lorem [markdownum](http://insunt.org/inpositaque), et sanguine rutilos dixit
-nigro cornu genus duris linguae. Super hic deus ego adveniens nullumque Venerem
-equis aurem aliisque celare densis dextramque similis **post**: mihi rexerat;
-bis.
-
-1. Scinditur annos
-2. Talia verba
-3. Habet delata villis domui
-4. Geminum viscere deum et utque
-
-## Magnorum nulla avertit pedem neque monimenta terram
+### Magnorum nulla avertit pedem neque monimenta terram
 
 Quo numquam, nunc [concussaque](http://mox-cunctos.net/), hora effugit mihi,
 pectore. Hinc fausto, circumspicit cadas; virilibus rapui, timidum rorat cuique

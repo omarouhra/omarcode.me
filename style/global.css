@@ -19,7 +19,11 @@
     @apply text-2xl md:text-3xl lg:text-5xl font-semibold uppercase tracking-widest;
   }
 
+  /* text */
 
+  .text {
+    @apply text-sm  mt-4  leading-normal md:leading-loose  md:text-base  text-gray-800 font-normal;
+  }
   /* filter button */
   .filter {
     @apply text-sm lg:text-base  font-semibold;
@@ -38,7 +42,14 @@
     @apply font-bold hover:text-blue-500 transitions;
   }
 
-  
+  /* Markdown styling */
+
+  .markdown > h3 {
+    @apply title mb-4;
+  }
+  .markdown > p {
+    @apply text mb-4;
+  }
 }
 @layer utilities {
   .shadow {

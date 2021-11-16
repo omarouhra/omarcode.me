@@ -29,7 +29,7 @@ function page({
       exit={{ opacity: 0 }}
       className='flex flex-col h-screen  max-w-[900px] mx-auto px-4 md:px-12 lg:px-0 antialiased'>
       <Head>
-        <title> page</title>
+        <title> {title}</title>
         <link rel='icon' href='/favicon.ico' />
         <link rel='preconnect' href='https://fonts.googleapis.com' />
         <link rel='preconnect' href='https://fonts.gstatic.com' crossorigin />
@@ -44,11 +44,11 @@ function page({
         {/* Project Hero */}
 
         <section>
-          <CustomLink link='/' title='←' big />
+          <CustomLink link='/' title='← Go Back' />
           <h2 className=' mt-10 text-xl md:text-2xl lg:text-3xl font-bold'>
             {title}
           </h2>
-          <p className='text-sm  mt-4  leading-normal md:leading-loose  md:text-base  text-gray-800 font-normal '>
+          <p className='text'>
             {paragraph}
           </p>
           <div className='flex flex-col lg:space-y-0 lg:flex-row  lg:justify-between mt-12 '>
@@ -72,6 +72,7 @@ function page({
         <div className='relative w-full h-[400px] md:h-[500px] lg:h-[1200px]'>
           <CustomImage image={preview} alt={title} className='object-contain' />
         </div>
+        <div className='markdown' dangerouslySetInnerHTML={{ __html: marked(content) }}></div>
       </main>
 
       {/* Footer */}
