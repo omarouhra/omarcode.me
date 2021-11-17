@@ -46,8 +46,10 @@ function page({
         {/* Project Hero */}
 
         <section>
-          <CustomLink link='/' title='← Go Back' />
-          <h2 className=' mt-10 text-xl md:text-2xl lg:text-3xl font-bold'>
+          <div className='mt-12 lg:mt-0'>
+            <CustomLink link='/' title='← Go Back' />
+          </div>
+          <h2 className=' mt-8 text-xl md:text-2xl lg:text-3xl font-bold'>
             {title}
           </h2>
           <p className='text'>{paragraph}</p>
@@ -79,7 +81,7 @@ function page({
           className='markdown'
           dangerouslySetInnerHTML={{ __html: marked(content) }}></div>
         <div>
-          <h2 className='title'>Other post</h2>
+          <h2 className='title'>Other Projects</h2>
           <div className='grid grid-cols-1 md:grid-cols-2 gap-12 my-16 lg:my-20'>
             {otherPosts.slice(0, 2).map((project, index) => (
               <motion.div
