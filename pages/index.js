@@ -206,7 +206,7 @@ export default function Home({ projects }) {
 
         <section className=' flex flex-col  space-y-12 lg:flex-row lg:space-y-0  lg:items-center lg:justify-between'>
           <div className='lg:w-1/2'>
-            <p className='text-xs text-blue-500'>
+            <p className='text-sm lg:text-base text-blue-500'>
               {" "}
               Want to know what is like to work with me?{" "}
             </p>
