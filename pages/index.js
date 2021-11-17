@@ -12,7 +12,7 @@ import fs from "fs";
 import path from "path";
 import matter from "gray-matter";
 import processGif from "../public/images/gif.gif";
-import { Howl} from "howler";
+import { Howl } from "howler";
 
 export default function Home({ projects }) {
   const [isActive, setIsActive] = useState(1);
@@ -33,7 +33,7 @@ export default function Home({ projects }) {
       initial={{ opacity: 0 }}
       animate={{ opacity: 1, transition: transition }}
       exit={{ opacity: 0 }}
-      className='flex flex-col h-screen  max-w-[900px] mx-auto px-4 md:px-12 lg:px-0 antialiased'>
+      className='flex flex-col max-w-[900px] mx-auto px-4 md:px-12 lg:px-0 antialiased'>
       <Head>
         <title>Omar Ouhra - Front End Developer </title>
         <link rel='icon' href='/favicon.ico' />
@@ -75,7 +75,9 @@ export default function Home({ projects }) {
               alt='Hero Image'
               className='rounded-full'
             />
-            <button className='hidden md:inline absolute bottom-0 right-1' onClick={playAudio}>
+            <button
+              className='hidden md:inline absolute bottom-0 right-1'
+              onClick={playAudio}>
               <img
                 src='https://www.svgrepo.com/show/6128/play-buton.svg'
                 alt='play audio button'
