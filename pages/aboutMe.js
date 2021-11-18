@@ -57,7 +57,7 @@ function aboutMe() {
               to give personality and meaning as you can see in this timelapse ,
             </p>
           </div>
-          <div className='rounded-lg  h-[600px] w-content'>
+          <div className='  h-[600px] '>
             <video autoPlay loop muted className='h-full shadow-2xl rounded-lg'>
               <source src='/timelap.mp4' />
             </video>
