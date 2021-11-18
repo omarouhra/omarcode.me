@@ -16,10 +16,11 @@ import { Howl } from "howler";
 
 export default function Home({ projects }) {
   const [isActive, setIsActive] = useState(1);
+  const [isAnimated, setIsAnimated] = useState(true);
   const Categories = [
     { id: 1, title: "Client project" },
     { id: 2, title: "Clone" },
-    { id: 3, title: "Design" },
+
   ];
   const transition = { duration: 0.7, ease: [0.4, 0.13, 0.23, 0.9] };
   const playAudio = () => {
@@ -165,11 +166,14 @@ export default function Home({ projects }) {
                 <button
                   onClick={() => {
                     setIsActive(filter.id);
+                    setIsAnimated(false);
                   }}
                   className={
                     isActive === filter.id
                       ? "filter text-black  transitions"
-                      : "filter text-gray-300 transitions"
+                      : `filter text-gray-400  transitions ${
+                          isAnimated ? "animate-bounce" : null
+                        }`
                   }>
                   {filter.title}
                 </button>
