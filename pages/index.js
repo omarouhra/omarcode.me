@@ -20,7 +20,6 @@ export default function Home({ projects }) {
   const Categories = [
     { id: 1, title: "Client project" },
     { id: 2, title: "Clone" },
-
   ];
   const transition = { duration: 0.7, ease: [0.4, 0.13, 0.23, 0.9] };
   const playAudio = () => {
@@ -34,7 +33,7 @@ export default function Home({ projects }) {
       initial={{ opacity: 0 }}
       animate={{ opacity: 1, transition: transition }}
       exit={{ opacity: 0 }}
-      className='flex flex-col max-w-[900px] mx-auto px-4 md:px-12 lg:px-0 antialiased'>
+      className='flex flex-col max-w-[900px] mx-auto px-4 md:px-12 lg:px-0 antialiased '>
       <Head>
         <title>Omar Ouhra - Front End Developer </title>
         <link rel='icon' href='/favicon.ico' />
@@ -54,11 +53,11 @@ export default function Home({ projects }) {
 
         <section className='mt-12 flex flex-col space-y-12 lg:space-y-0 lg:flex-row lg:justify-between lg:items-start'>
           <div className='lg:w-2/3'>
-            <h1 className=' text-xl md:text-2xl lg:text-3xl font-bold leading-loose  md:leading-normal lg:leading-normal'>
+            <h1 className=' text-xl md:text-2xl lg:text-3xl font-bold leading-loose text-justify	 md:leading-normal lg:leading-normal'>
               Hey There! I'm <span className='text-lightBlue'>Omar</span>. Front
               End Developer & Digital Content Creator.
             </h1>
-            <p className=' text-sm  mt-4 leading-normal md:leading-loose  md:text-base  text-gray-800 font-normal '>
+            <p className=' text-sm  mt-4 leading-normal 	 md:leading-loose  md:text-base text-justify	 text-gray-800 font-normal '>
               I am 22 years old from Morocco. My mission is to scale up your Web
               presence with high problem-solving skills and a huge passion for
               design. User interfaces with meaningful UX are what I strongly
@@ -115,7 +114,7 @@ export default function Home({ projects }) {
         <section>
           <div>
             <h2 className='title'>My Skills</h2>
-            <p className='text-sm  mt-4 leading-normal md:leading-loose   md:text-base  text-gray-800 font-normal  md:w-4/5'>
+            <p className='text-sm  mt-4 leading-normal md:leading-loose	 md:text-base text-justify	 text-gray-800 font-normal  md:w-4/5'>
               As a developer, I am convinced that the way to be successful in
               such a crowded market is to always LEARN. But far away from the
               basics, I have dedicated the Big Majority of my time to practice
@@ -155,7 +154,7 @@ export default function Home({ projects }) {
         {/* Project Section */}
         <section className=''>
           <h2 className='title'>Recent Work </h2>
-          <p className='text-sm  mt-6  leading-normal md:leading-loose  sm:w-4/5 md:w-4/5 md:text-base  text-gray-800 font-normal  '>
+          <p className='text-sm  mt-6  leading-normal md:leading-loose text-justify	 sm:w-4/5 md:w-4/5 md:text-base  text-gray-800 font-normal  '>
             I like to stay busy and always have a project in the works. Take a
             look at some of the applications, articles, and companies I've
             dedicated my time to.

@@ -11,7 +11,7 @@ function Project({ image, imageAlt, title, description, link }) {
       <h1 className='font-bold uppercase text-base lg:text-xl tracking-widest my-4 lg:my-8'>
         {title}
       </h1>
-      <p className='text-sm  text-gray-500 my-4 max-w-xs '>{description}</p>
+      <p className='text-sm  text-gray-500 my-4 max-w-xs text-justify	'>{description}</p>
       <CustomLink title='VIEW PROJECT' link={link} />
     </div>
   );

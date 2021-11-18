@@ -52,7 +52,7 @@ function page({
           <h2 className=' mt-8 text-xl md:text-2xl lg:text-3xl font-bold'>
             {title}
           </h2>
-          <p className='text'>{paragraph}</p>
+          <p className='text text-justify	'>{paragraph}</p>
           <div className='flex flex-col lg:space-y-0 lg:flex-row  lg:justify-between mt-12 '>
             <div className='flex flex-col space-y-6 lg:flex-row lg:space-y-0 lg:space-x-12  lg:items-center'>
               <div className='lg:w-38'>

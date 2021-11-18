@@ -12,7 +12,7 @@ function aboutMe() {
       initial={{ opacity: 0 }}
       animate={{ opacity: 1, transition: transition }}
       exit={{ opacity: 0 }}
-      className='flex flex-col max-w-[900px] mx-auto px-4 md:px-12 lg:px-0 antialiased'>
+      className='flex flex-col max-w-[900px] mx-auto px-4 md:px-12 lg:px-0 antialiased text-justify	'>
       <Head>
         <title>Omar Ouhra - Front End Developer </title>
         <link rel='icon' href='/favicon.ico' />
