@@ -1,5 +1,6 @@
 import Footer from "../components/Footer";
 import NavBar from "../components/NavBar";
+import Head from "next/head";
 import { motion } from "framer-motion";
 import CustomLink from "../components/CustomLink";
 
@@ -12,6 +13,16 @@ function aboutMe() {
       animate={{ opacity: 1, transition: transition }}
       exit={{ opacity: 0 }}
       className='flex flex-col max-w-[900px] mx-auto px-4 md:px-12 lg:px-0 antialiased'>
+      <Head>
+        <title>Omar Ouhra - Front End Developer </title>
+        <link rel='icon' href='/favicon.ico' />
+        <link rel='preconnect' href='https://fonts.googleapis.com' />
+        <link rel='preconnect' href='https://fonts.gstatic.com' crossOrigin />
+        <link
+          href='https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;600;700;800&display=swap'
+          rel='stylesheet'
+        />
+      </Head>
       <NavBar />
       <main className='flex-col space-y-12 md:space-y-24 '>
         <div>
@@ -42,9 +53,8 @@ function aboutMe() {
             <p className='text-sm  mt-4 leading-normal md:leading-loose  md:text-base  text-gray-700 font-normal  '>
               I really enjoy drawing things and creating new ideas that's why I
               choose to create a logo using Islamic calligraphy if you wondering
-              this is my name in Arabic calligraphy and I add code word
-              below it to give personality and meaning as you can see in this
-              timelapse ,
+              this is my name in Arabic calligraphy and I add code word below it
+              to give personality and meaning as you can see in this timelapse ,
             </p>
           </div>
           <div className='rounded-lg  h-[600px] w-content'>
