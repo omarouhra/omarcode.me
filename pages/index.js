@@ -53,7 +53,7 @@ export default function Home({ projects }) {
 
         <section className='mt-12 flex flex-col space-y-12 lg:space-y-0 lg:flex-row lg:justify-between lg:items-start'>
           <div className='lg:w-2/3'>
-            <h1 className=' text-xl md:text-2xl lg:text-3xl font-bold leading-loose text-justify	 md:leading-normal lg:leading-normal'>
+            <h1 className=' text-xl md:text-2xl lg:text-3xl font-bold leading-loose lg:text-justify	 md:leading-normal lg:leading-normal'>
               Hey There! I'm <span className='text-lightBlue'>Omar</span>. Front
               End Developer & Digital Content Creator.
             </h1>
