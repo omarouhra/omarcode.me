@@ -4,7 +4,7 @@ import logo from "../public/images/logo.png";
 
 function NavBar() {
   return (
-    <div className='flex w-full justify-between mt-12  lg:mt-4  md:py-8  max-w-screen-lg mx-auto'>
+    <div className='flex w-full justify-between items-center mt-12  lg:mt-4  md:py-8  max-w-screen-lg mx-auto'>
       <CustomLink
         link='/'
         icon={
