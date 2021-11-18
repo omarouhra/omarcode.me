@@ -54,7 +54,7 @@ function aboutMe() {
               I really enjoy drawing things and creating new ideas that's why I
               choose to create a logo using Islamic calligraphy if you wondering
               this is my name in Arabic calligraphy and I add code word below it
-              to give personality and meaning as you can see in this timelapse ,
+              to give personality and meaning as you can see in this timelapse.
             </p>
           </div>
           <div className='  h-[600px] '>
