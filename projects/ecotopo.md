@@ -19,6 +19,7 @@ I like the punctuality! I am very happy with what we had done. Omar has a great 
 
 - React.js
 - Django Rest Framework
+- Styled-Components
 - Netlify
 - Heroku
 
