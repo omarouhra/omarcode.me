@@ -198,6 +198,7 @@ export default function Home({ projects }) {
                       title={project.frontmatter.title}
                       description={project.frontmatter.description}
                       link={`/${project.slug}`}
+                      soon={project.frontmatter.soon ? true : false}
                     />
                   </motion.div>
                 ) : null}
