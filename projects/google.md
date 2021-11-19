@@ -1,7 +1,7 @@
 ---
 title: "Google clone"
 category: 2
-description: "We will look at 10 simple tips and tricks to increase the speed of your code when writing JS"
+description: "Google was the object of another cloning project!"
 paragraph: "Google was the object of another cloning project! I am crazy about crafting innovative products. That's obvious! All good developers seek creativity.  However, The Best Ones invest in BOTH: creativity & Technical Competence. if you're in the same industry, this will truly brighten your Learning path!"
 cover: "/images/projects/clone-4.png"
 preview: "/images/preview/google-p.png"

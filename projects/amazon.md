@@ -1,8 +1,8 @@
 ---
 title: "Amazon clone"
 category: 2
-description: "We will look at 10 simple tips and tricks to increase the speed of your code when writing JS"
-paragraph: "Cloning is fantastic! Well.. if the Brilliants made the original, then making exact copies should be a wonderful Big Challenge! You certainly Know Instagram. I developed a perfectly similar application with a powerful feature set. By the way you have to take a look at my 'Real' Instagram account, you'll probably need to update your 'to-follow' list!"
+description: "This project is a clone for Amazon"
+paragraph: "This project is a clone for Amazon, the prime example of an e-commerce website that has all the key features identifying it from the competition. To complete it as a functional application, I still got lots to catch up on! UI design is done, The implementation of features is still LOADING!"
 cover: "/images/projects/clone-3.png"
 preview: "/images/preview/amazon-p.png"
 role: "front end developer"

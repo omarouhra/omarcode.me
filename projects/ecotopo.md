@@ -1,7 +1,7 @@
 ---
 title: "EcoTopo"
 category: 1
-description: "In this review, we will be looking at the new Python book from Oriley"
+description: "This project for instance is an application directed to an expert company in Topography"
 paragraph: "My clients are amazingly diverse! I am truly fascinated by this fact. This project for instance is an application directed to an expert company in Topography. I had to create an awesome image to its professional work.
 if you tend to minimal interfaces, then i selectively invite you to see this ONE!"
 cover: "/images/projects/project-2.png"
@@ -12,8 +12,8 @@ live: "https://www.ecotopo.ma"
 
 ### What the client thinks
 
-I like the punctuality! I am very happy with what we had done. Omar has a great customer service, he listens and tries to understand. And that what makes the service good.
-**Khawla Adami - CEO**
+Omar did a great job building this website, The clients are using the tracking features and i am so happy with the results
+**Mr Mohammad Rafik- CEO**
 
 ### Dev Stack
 

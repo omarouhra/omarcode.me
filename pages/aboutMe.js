@@ -44,7 +44,7 @@ function aboutMe() {
             hating school. I could be wrong but I still have the same feeling! I
             adore creating beautiful things and sense the pride and the passion
             to share them. I'm a fan of minimalism! Next to coding and managing
-            my lovely project, I love music, calligraphy and coffee!
+            my small business, I love music, calligraphy and coffee!
           </p>
         </div>
         <div className='flex flex-col space-y-6 lg:flex-row-reverse lg:justify-between lg:space-y-0 lg:items-center'>
@@ -52,7 +52,7 @@ function aboutMe() {
             <h2 className='title mt-4 lg:mt-12'>The logo</h2>
             <p className='text-sm  mt-4 leading-normal md:leading-loose  md:text-base  text-gray-700 font-normal  '>
               I really enjoy drawing things and creating new ideas that's why I
-              choose to create a logo using Islamic calligraphy if you wondering
+              choose to create a logo using Islamic calligraphy if you're wondering,
               this is my name in Arabic calligraphy and I add code word below it
               to give personality and meaning as you can see in this timelapse.
             </p>

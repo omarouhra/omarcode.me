@@ -93,18 +93,18 @@ export default function Home({ projects }) {
             <div>
               <p className='statusTitle'>CURRENTLY</p>
               <p className='text-sm  lg:w-2/3 '>
-                Freelance Front End Dev, Content creator at W&S
+                Freelance Front End Dev, Content creator at WillAndSkill.
               </p>
             </div>
             <div>
               <p className='statusTitle'>ON THE SIDE</p>
               <p className='text-sm  lg:w-2/3'>
-                Finishing my last year of software enginnering
+                Finishing my last year of software enginnering.
               </p>
             </div>
             <div>
               <p className='statusTitle'>LEARINING ABOUT</p>
-              <p className='text-sm  '>React Native</p>
+              <p className='text-sm  '>React Native.</p>
             </div>
           </div>
         </section>

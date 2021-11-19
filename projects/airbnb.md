@@ -1,7 +1,7 @@
 ---
 title: "Airbnb clone"
 category: 2
-description: "We will look at 10 simple tips and tricks to increase the speed of your code when writing JS"
+description: "This project's aim was to build an Airbnb clone."
 paragraph: "This project's aim was to build an Airbnb clone. I have proudly worked on redeveloping the most popular websites and this is definitely one of the greatest!  The solution of connecting hosts and travellers already exists, but it's redoing is a real Bonus!"
 cover: "/images/projects/clone-1.png"
 preview: "/images/preview/airbnb-p.png"

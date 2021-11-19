@@ -1,8 +1,8 @@
 ---
 title: "instagram clone"
 category: 2
-description: "We will look at 10 simple tips and tricks to increase the speed of your code when writing JS"
-paragraph: "This project's aim was to build an Airbnb clone. I have proudly worked on redeveloping the most popular websites and this is definitely one of the greatest!  The solution of connecting hosts and travellers already exists, but it's redoing is a real Bonus!"
+description: "You certainly Know Instagram. I developed a perfectly similar application"
+paragraph: "Cloning is fantastic! Well.. if the Brilliants made the original, then making exact copies should be a wonderful Big Challenge! You certainly Know Instagram. I developed a perfectly similar application with a powerful feature set. By the way you have to take a look at my 'Real' Instagram account, you'll probably need to update your 'to-follow' list! "
 cover: "/images/projects/clone-2.png"
 preview: "/images/preview/insta-p.png"
 role: "front end developer"
