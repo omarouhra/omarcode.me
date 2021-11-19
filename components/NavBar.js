@@ -16,7 +16,7 @@ function NavBar() {
       <div className='flex space-x-4 items-center '>
         <CustomLink
           newTab
-          link='https:www.instagram.com/omar.code'
+          link='https://www.instagram.com/omar.code/'
           icon={
             <img
               width={20}
@@ -37,7 +37,7 @@ function NavBar() {
 
         <CustomLink
           newTab
-          link='https://github.com/omarouhra'
+          link='https://github.com/omarouhra/'
           icon={
             <img
               width={20}
