@@ -7,7 +7,7 @@
     @apply transition-all duration-500;
   }
   .statusTitle {
-    @apply text-sm  font-bold text-lightBlue mb-2;
+    @apply text-sm  font-bold mb-2;
   }
 
   /* title */

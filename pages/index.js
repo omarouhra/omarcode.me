@@ -13,6 +13,7 @@ import path from "path";
 import matter from "gray-matter";
 import processGif from "../public/images/gif.gif";
 import { Howl } from "howler";
+import { RoughNotation } from "react-rough-notation";
 
 export default function Home({ projects }) {
   const [isActive, setIsActive] = useState(1);
@@ -54,9 +55,17 @@ export default function Home({ projects }) {
         <section className='mt-12 flex flex-col space-y-12 lg:space-y-0 lg:flex-row lg:justify-between lg:items-start'>
           <div className='lg:w-2/3'>
             <h1 className=' text-xl md:text-2xl lg:text-3xl font-bold leading-loose lg:text-justify	 md:leading-normal lg:leading-normal'>
-              Hey There! I'm <span className='text-orange'>Omar Ouhra</span>. Front
-              End Developer & Digital Content Creator.
+              Hey There! I'm{" "}
+              <RoughNotation
+                type='highlight'
+                show={true}
+                color={"#FFAD95"}
+                animationDuration={1200}>
+                Omar Ouhra
+              </RoughNotation>
+              . Front End Developer & Digital Content Creator.
             </h1>
+
             <p className=' text-sm  mt-4 leading-normal 	 md:leading-loose  md:text-base text-justify	 text-gray-800 font-normal '>
               I am 22 years old from Morocco. My mission is to scale up your Web
               presence with high problem-solving skills and a huge passion for
@@ -69,7 +78,7 @@ export default function Home({ projects }) {
             </div>
           </div>
 
-          <div className='relative w-56 h-56 '>
+          <div className='relative w-56 h-56 lg:-translate-y-4'>
             <CustomImage
               image={HeroImage.src}
               alt='Hero Image'
@@ -91,19 +100,45 @@ export default function Home({ projects }) {
         <section className='flex flex-col lg:space-y-0 lg:flex-row  lg:justify-between '>
           <div className='flex flex-col space-y-6 lg:flex-row lg:space-y-0 font-semibold '>
             <div>
-              <p className='statusTitle'>CURRENTLY</p>
+              <p className='statusTitle'>
+                <RoughNotation
+                  type='box'
+                  show={true}
+                  color={"#FF7262"}
+                  animationDelay={1000}>
+                  CURRENTLY{" "}
+                </RoughNotation>
+              </p>
+
               <p className='text-sm  lg:w-2/3 '>
                 Freelance Front End Dev, Content creator at WillAndSkill.
               </p>
             </div>
             <div>
-              <p className='statusTitle'>ON THE SIDE</p>
+              <p className='statusTitle'>
+                <RoughNotation
+                  type='box'
+                  show={true}
+                  color={"#FF7262"}
+                  animationDelay={1500}>
+                  ON THE SIDE{" "}
+                </RoughNotation>
+              </p>
+
               <p className='text-sm  lg:w-2/3'>
                 Finishing my last year of software enginnering.
               </p>
             </div>
             <div>
-              <p className='statusTitle'>LEARINING ABOUT</p>
+              <p className='statusTitle'>
+                <RoughNotation
+                  type='box'
+                  show={true}
+                  color={"#FF7262"}
+                  animationDelay={2000}>
+                  LEARINING ABOUT{" "}
+                </RoughNotation>
+              </p>
               <p className='text-sm  '>React Native.</p>
             </div>
           </div>
@@ -174,6 +209,7 @@ export default function Home({ projects }) {
                           isAnimated ? "animate-bounce" : null
                         }`
                   }>
+
                   {filter.title}
                 </button>
               </div>

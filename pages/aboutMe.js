@@ -3,6 +3,7 @@ import NavBar from "../components/NavBar";
 import Head from "next/head";
 import { motion } from "framer-motion";
 import CustomLink from "../components/CustomLink";
+import { RoughNotation } from "react-rough-notation";
 
 function aboutMe() {
   const transition = { duration: 0.7, ease: [0.4, 0.13, 0.23, 0.9] };
@@ -31,7 +32,13 @@ function aboutMe() {
           </div>
           <h2 className=' mt-8 text-xl md:text-2xl lg:text-3xl font-bold'>
             {" "}
-            About Me
+            <RoughNotation
+              type='highlight'
+              show={true}
+              color={"#FFAD95"}
+              animationDuration={1200}>
+              About Me
+            </RoughNotation>
           </h2>
           <p className=' text-sm  mt-4 leading-normal md:leading-loose  md:text-base  text-gray-700 font-normal '>
             Hello! If you're wondering who's the person behind this work, then
@@ -52,9 +59,10 @@ function aboutMe() {
             <h2 className='title mt-4 lg:mt-12'>The logo</h2>
             <p className='text-sm  mt-4 leading-normal md:leading-loose  md:text-base  text-gray-700 font-normal  '>
               I really enjoy drawing things and creating new ideas that's why I
-              choose to create a logo using Islamic calligraphy if you're wondering,
-              this is my name in Arabic calligraphy and I add code word below it
-              to give personality and meaning as you can see in this timelapse.
+              choose to create a logo using Islamic calligraphy if you're
+              wondering, this is my name in Arabic calligraphy and I add code
+              word below it to give personality and meaning as you can see in
+              this timelapse.
             </p>
           </div>
           <div className='  h-[600px] '>

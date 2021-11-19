@@ -3,13 +3,13 @@ import NavBar from "./NavBar";
 
 function Footer() {
   return (
-    <footer >
+    <footer>
       <div className='mt-12 lg:mt-24'>
         <div className='mb-12'>
           <h2 className='title'>Now about your project !</h2>
           <p className='text-sm font-normal  my-8 md:text-base'>
             I’m currently{" "}
-            <span className='text-orange font-bold'>available</span>
+            <span className='text-lightBlue font-bold'>available</span>
           </p>
 
           <p className='text-sm font-normal my-8 md:text-base text-gray-800  leading-loose '>
