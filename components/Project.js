@@ -17,7 +17,7 @@ function Project({ image, imageAlt, title, description, link, soon }) {
       </h1>
       <p className='text-sm  text-gray-500 my-4 max-w-xs	'>{description}</p>
       {soon ? (
-        <p className='text-sm font-bold text-blue-500'>Coming Soon</p>
+        <p className='text-sm font-bold text-orange'>Coming Soon</p>
       ) : (
         <CustomLink title='VIEW PROJECT' link={link} />
       )}

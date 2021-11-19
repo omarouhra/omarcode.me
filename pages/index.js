@@ -6,7 +6,7 @@ import Project from "../components/Project";
 import { useState } from "react";
 import { motion } from "framer-motion";
 import CustomImage from "../components/CustomImage";
-import HeroImage from "../public/images/hero.png";
+import HeroImage from "../public/images/omar.png";
 import Instagram from "../public/images/instagram.png";
 import fs from "fs";
 import path from "path";
@@ -54,7 +54,7 @@ export default function Home({ projects }) {
         <section className='mt-12 flex flex-col space-y-12 lg:space-y-0 lg:flex-row lg:justify-between lg:items-start'>
           <div className='lg:w-2/3'>
             <h1 className=' text-xl md:text-2xl lg:text-3xl font-bold leading-loose lg:text-justify	 md:leading-normal lg:leading-normal'>
-              Hey There! I'm <span className='text-lightBlue'>Omar</span>. Front
+              Hey There! I'm <span className='text-orange'>Omar Ouhra</span>. Front
               End Developer & Digital Content Creator.
             </h1>
             <p className=' text-sm  mt-4 leading-normal 	 md:leading-loose  md:text-base text-justify	 text-gray-800 font-normal '>
@@ -69,14 +69,14 @@ export default function Home({ projects }) {
             </div>
           </div>
 
-          <div className='relative w-52 h-52 '>
+          <div className='relative w-56 h-56 '>
             <CustomImage
               image={HeroImage.src}
               alt='Hero Image'
               className='rounded-full'
             />
             <button
-              className='hidden md:inline absolute bottom-0 right-1'
+              className='hidden md:inline absolute bottom-1 right-1'
               onClick={playAudio}>
               <img
                 src='https://www.svgrepo.com/show/6128/play-buton.svg'

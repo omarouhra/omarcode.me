@@ -45,7 +45,7 @@
   /* Markdown styling */
 
   .markdown > h3 {
-    @apply title mt-6 mb-2 text-blue-500;
+    @apply title mt-6 mb-2 text-lightBlue;
   }
   .markdown > p {
     @apply text mb-4 text-justify	;

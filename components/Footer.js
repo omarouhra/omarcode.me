@@ -9,7 +9,7 @@ function Footer() {
           <h2 className='title'>Now about your project !</h2>
           <p className='text-sm font-normal  my-8 md:text-base'>
             I’m currently{" "}
-            <span className='text-blue-500 font-bold'>available</span>
+            <span className='text-orange font-bold'>available</span>
           </p>
 
           <p className='text-sm font-normal my-8 md:text-base text-gray-800  leading-loose '>
