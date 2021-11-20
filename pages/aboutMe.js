@@ -70,15 +70,7 @@ function aboutMe() {
         </div>
         <div className='flex flex-col space-y-6 lg:flex-row-reverse lg:justify-between lg:space-y-0 lg:items-center'>
           <div className='lg:w-1/2'>
-            <h2 className='title mt-4 lg:mt-12'>
-              <RoughNotation
-                type='highlight'
-                show={true}
-                color={"#FFAD95"}
-                animationDuration={1200}>
-                The Logo
-              </RoughNotation>
-            </h2>
+            <h2 className='title mt-4 lg:mt-12'>The Logo</h2>
             <p className='text-sm  mt-4 leading-normal md:leading-loose  md:text-base  text-gray-700 font-normal  '>
               I really enjoy drawing things and creating new ideas that's why I
               choose to create a logo using Islamic calligraphy if you're
