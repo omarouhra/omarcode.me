@@ -79,8 +79,8 @@ function aboutMe() {
               this timelapse.
             </p>
           </div>
-          <div className='  h-[600px] '>
-            <video autoPlay loop muted className='h-full shadow-2xl rounded-lg'>
+          <div className='  h-[600px] lg:w-[350px] '>
+            <video autoPlay loop muted className='h-full  shadow-2xl rounded-lg'>
               <source src='/timelap.mp4' />
             </video>
           </div>
