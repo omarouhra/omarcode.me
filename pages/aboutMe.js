@@ -43,7 +43,14 @@ function aboutMe() {
             </RoughNotation>
           </h2>
           <div className='flex flex-col space-y-12 lg:space-y-0 lg:flex-row-reverse lg:justify-between lg:items-center '>
-            <div className='lg:w-2/3'>
+            <div className='relative w-[300px] lg:w-1/3   h-[410px]  '>
+              <CustomImage
+                image={HeroImage.src}
+                alt='Hero Image'
+                className='object-contain '
+              />
+            </div>
+            <div className='lg:w-2/3 lg: mr-12'>
               <p className=' text-sm  mt-4 leading-normal md:leading-loose  md:text-base  text-gray-700 font-normal text-justify '>
                 Hello! If you're wondering who's the person behind this work,
                 then this section is made for you! Let me just tell you that I
@@ -59,19 +66,19 @@ function aboutMe() {
                 love music, calligraphy and coffee!
               </p>
             </div>
-
-            <div className='relative w-[300px] lg:w-1/3   h-[410px] mr-12  '>
-              <CustomImage
-                image={HeroImage.src}
-                alt='Hero Image'
-                className='object-contain '
-              />
-            </div>
           </div>
         </div>
         <div className='flex flex-col space-y-6 lg:flex-row-reverse lg:justify-between lg:space-y-0 lg:items-center'>
           <div className='lg:w-1/2'>
-            <h2 className='title mt-4 lg:mt-12'>The logo</h2>
+            <h2 className='title mt-4 lg:mt-12'>
+              <RoughNotation
+                type='highlight'
+                show={true}
+                color={"#FFAD95"}
+                animationDuration={1200}>
+                The Logo
+              </RoughNotation>
+            </h2>
             <p className='text-sm  mt-4 leading-normal md:leading-loose  md:text-base  text-gray-700 font-normal  '>
               I really enjoy drawing things and creating new ideas that's why I
               choose to create a logo using Islamic calligraphy if you're
