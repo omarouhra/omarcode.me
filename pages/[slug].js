@@ -3,8 +3,6 @@ import Footer from "../components/Footer";
 import NavBar from "../components/NavBar";
 import Head from "next/head";
 import Project from "../components/Project";
-import { useState } from "react";
-import axios from "axios";
 import { motion } from "framer-motion";
 import fs from "fs";
 import path from "path";
@@ -106,6 +104,7 @@ function page({
                   title={project.frontmatter.title}
                   description={project.frontmatter.description}
                   link={`/${project.slug}`}
+                  soon={project.frontmatter.soon ? true : false}
                 />
               </motion.div>
             ))}
