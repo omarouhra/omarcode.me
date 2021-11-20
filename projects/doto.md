@@ -18,7 +18,8 @@ The purpose here is to create a simply awesome application that gives its user t
 
 - Next.js
 - Tailwind CSS
-- Axios
+- Quote Api
+- Local Storage
 - Vercel
 
 ### Challenges
