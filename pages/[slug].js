@@ -87,6 +87,7 @@ function page({
           className='markdown'
           dangerouslySetInnerHTML={{ __html: marked(content) }}></div>
         <div>
+          
           <h2 className='title'>Other Projects</h2>
           <div className='grid grid-cols-1 md:grid-cols-2 gap-12 my-16 lg:my-20'>
             {otherPosts.slice(0, 2).map((project, index) => (

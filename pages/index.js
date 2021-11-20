@@ -6,8 +6,8 @@ import Project from "../components/Project";
 import { useState } from "react";
 import { motion } from "framer-motion";
 import CustomImage from "../components/CustomImage";
-import HeroImage from "../public/images/omar.png";
-import Instagram from "../public/images/instagram.png";
+import HeroImage from "../public/images/omar.webp";
+import Instagram from "../public/images/instagram.webp";
 import fs from "fs";
 import path from "path";
 import matter from "gray-matter";
@@ -21,6 +21,7 @@ export default function Home({ projects }) {
   const Categories = [
     { id: 1, title: "Client project" },
     { id: 2, title: "Clone" },
+    { id: 3, title: "Web Apps" },
   ];
   const transition = { duration: 0.7, ease: [0.4, 0.13, 0.23, 0.9] };
   const playAudio = () => {

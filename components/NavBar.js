@@ -1,6 +1,6 @@
 import CustomImage from "./CustomImage";
 import CustomLink from "./CustomLink";
-import logo from "../public/images/logo.png";
+import logo from "../public/images/logo.webp";
 
 function NavBar() {
   return (

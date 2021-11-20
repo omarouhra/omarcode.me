@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 import CustomLink from "../components/CustomLink";
 import { RoughNotation } from "react-rough-notation";
 import CustomImage from "../components/CustomImage";
-import HeroImage from "../public/images/aboutMe.png";
+import HeroImage from "../public/images/aboutMe.webp";
 
 function aboutMe() {
   const transition = { duration: 0.7, ease: [0.4, 0.13, 0.23, 0.9] };
