@@ -86,31 +86,32 @@ function page({
         <div
           className='markdown'
           dangerouslySetInnerHTML={{ __html: marked(content) }}></div>
-        <div>
-          
-          <h2 className='title'>Other Projects</h2>
-          <div className='grid grid-cols-1 md:grid-cols-2 gap-12 my-16 lg:my-20'>
-            {otherPosts.slice(0, 2).map((project, index) => (
-              <motion.div
-                key={index}
-                initial={{ opacity: 0, y: 20 }}
-                animate={{
-                  opacity: 1,
-                  y: 0,
-                  transition: transition,
-                }}>
-                <Project
-                  image={project.frontmatter.cover}
-                  imageAlt={project.frontmatter.title}
-                  title={project.frontmatter.title}
-                  description={project.frontmatter.description}
-                  link={`/${project.slug}`}
-                  soon={project.frontmatter.soon ? true : false}
-                />
-              </motion.div>
-            ))}
+        {otherPosts.length >0  ? (
+          <div>
+            <h2 className='title'>Other Projects</h2>
+            <div className='grid grid-cols-1 md:grid-cols-2 gap-12 my-16 lg:my-20'>
+              {otherPosts.slice(0, 2).map((project, index) => (
+                <motion.div
+                  key={index}
+                  initial={{ opacity: 0, y: 20 }}
+                  animate={{
+                    opacity: 1,
+                    y: 0,
+                    transition: transition,
+                  }}>
+                  <Project
+                    image={project.frontmatter.cover}
+                    imageAlt={project.frontmatter.title}
+                    title={project.frontmatter.title}
+                    description={project.frontmatter.description}
+                    link={`/${project.slug}`}
+                    soon={project.frontmatter.soon ? true : false}
+                  />
+                </motion.div>
+              ))}
+            </div>
           </div>
-        </div>
+        ) : null}
       </main>
 
       {/* Footer */}
