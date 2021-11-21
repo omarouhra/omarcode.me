@@ -4,7 +4,7 @@ import CustomLink from "./CustomLink";
 function Project({ image, imageAlt, title, description, link, soon }) {
   return (
     <div className='group'>
-      <div className=' relative w-60 h-60   lg:group-hover:shadow-xl rounded-lg lg:transitions '>
+      <div className=' relative w-72 h-72   lg:group-hover:shadow-xl rounded-lg lg:transitions '>
         <CustomImage
           image={image}
           alt={imageAlt}

@@ -195,7 +195,7 @@ export default function Home({ projects }) {
             look at some of the applications, articles, and companies I've
             dedicated my time to.
           </p>
-          <div className='flex space-x-4 lg:space-x-12 mt-8 '>
+          <div className='flex space-x-6 lg:space-x-12 mt-8 '>
             {Categories.map(filter => (
               <div key={filter.id}>
                 <button

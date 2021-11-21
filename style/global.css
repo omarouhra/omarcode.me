@@ -26,7 +26,7 @@
   }
   /* filter button */
   .filter {
-    @apply text-sm lg:text-base  font-semibold;
+    @apply text-base  font-semibold;
   }
 
   /* project infos */

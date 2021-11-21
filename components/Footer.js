@@ -17,7 +17,11 @@ function Footer() {
             business.
             <br /> Another option appears to be a question or a DM to connect!
           </p>
-          <CustomLink title='omar@omarcode.me' important link='#' />
+          <CustomLink
+            title='hi@omarcode.me'
+            important
+            link='mailto:hi@omarcode.me'
+          />
         </div>
         <NavBar />
       </div>
