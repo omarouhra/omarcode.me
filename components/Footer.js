@@ -4,7 +4,7 @@ import NavBar from "./NavBar";
 function Footer() {
   return (
     <footer>
-      <div className='mt-12 lg:mt-24'>
+      <div className='my-12 lg:mb-0 lg:mt-24'>
         <div className='mb-12'>
           <h2 className='title'>Now about your project !</h2>
           <p className='text-sm font-normal  my-8 md:text-base'>

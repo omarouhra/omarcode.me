@@ -75,7 +75,7 @@ export default function Home({ projects }) {
             </p>
             <div className='flex space-x-6 mt-6'>
               <CustomLink title='ABOUT ME' link='/aboutMe' />
-              <CustomLink title='MY RESUME' link='#' />
+              {/* <CustomLink title='MY RESUME' link='#' /> */}
             </div>
           </div>
 
