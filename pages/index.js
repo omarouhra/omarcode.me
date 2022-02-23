@@ -282,7 +282,7 @@ export default function Home({ projects }) {
             </h2>
             <CustomLink
               title="FOLLOW ME"
-              link="https:www.instagram.com/omar.code"
+              link="https://www.instagram.com/omar.code/"
               newTab
             />
           </div>
