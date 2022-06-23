@@ -72,7 +72,7 @@ export default function Home({ projects }) {
             </h1>
 
             <p className=' text-sm  mt-4 leading-normal 	 md:leading-loose  md:text-base text-justify	 text-gray-800 font-normal '>
-              I am 22 years old from Morocco. My mission is to scale up your Web
+              I am 23 years old from Morocco. My mission is to scale up your Web
               presence with high problem-solving skills and a huge passion for
               design. User interfaces with meaningful UX are what I strongly
               master!
