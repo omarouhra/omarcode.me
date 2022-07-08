@@ -15,9 +15,7 @@
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-richtext": "^1.1.0",
-    "react-rough-notation": "^1.0.1",
-    "storyblok-js-client": "^4.1.5",
-    "storyblok-react": "^0.1.2"
+    "react-rough-notation": "^1.0.1"
   },
   "devDependencies": {
     "autoprefixer": "^10.2.6",

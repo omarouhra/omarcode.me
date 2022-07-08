@@ -20,8 +20,8 @@ function page({
   const transition = { duration: 0.7, ease: [0.4, 0.13, 0.23, 0.9] };
   const otherPosts = projects.filter(
     article =>
-      article.frontmatter.title != title &&
-      article.frontmatter.category === category
+      article.frontmatter?.title != title &&
+      article.frontmatter?.category === category
   );
   return (
     <motion.div
@@ -86,7 +86,7 @@ function page({
         <div
           className='markdown'
           dangerouslySetInnerHTML={{ __html: marked(content) }}></div>
-        {otherPosts.length >0  ? (
+        {otherPosts.length > 0 ? (
           <div>
             <h2 className='title'>Other Projects</h2>
             <div className='grid grid-cols-1 md:grid-cols-2 gap-12 my-16 lg:my-20'>
@@ -100,12 +100,12 @@ function page({
                     transition: transition,
                   }}>
                   <Project
-                    image={project.frontmatter.cover}
-                    imageAlt={project.frontmatter.title}
-                    title={project.frontmatter.title}
-                    description={project.frontmatter.description}
+                    image={project.frontmatter?.cover}
+                    imageAlt={project.frontmatter?.title}
+                    title={project.frontmatter?.title}
+                    description={project.frontmatter?.description}
                     link={`/${project.slug}`}
-                    soon={project.frontmatter.soon ? true : false}
+                    soon={project.frontmatter?.soon ? true : false}
                   />
                 </motion.div>
               ))}

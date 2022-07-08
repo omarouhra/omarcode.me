@@ -3,7 +3,7 @@ import NavBar from "../components/NavBar";
 import Head from "next/head";
 import { motion } from "framer-motion";
 import CustomLink from "../components/CustomLink";
-import { RoughNotation } from "react-rough-notation";
+import { RoughNotation } from "react-rough-notation";x
 import CustomImage from "../components/CustomImage";
 import HeroImage from "../public/images/aboutMe.webp";
 
@@ -80,7 +80,11 @@ function aboutMe() {
             </p>
           </div>
           <div className='  h-[600px] lg:w-[350px] '>
-            <video autoPlay loop muted className='h-full  shadow-2xl rounded-lg'>
+            <video
+              autoPlay
+              loop
+              muted
+              className='h-full  shadow-2xl rounded-lg'>
               <source src='/timelap.mp4' />
             </video>
           </div>

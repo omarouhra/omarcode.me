@@ -78,7 +78,7 @@ export default function Home({ projects }) {
             </p>
             <div className='flex space-x-6 mt-6'>
               <CustomLink title='ABOUT ME' link='/aboutMe' />
-              <CustomLink title='MY RESUME' link='/cv.pdf' />
+              <CustomLink title='MY RESUME' link='/cv.pdf' newTab />
             </div>
           </div>
 
@@ -227,7 +227,6 @@ export default function Home({ projects }) {
               <>
                 {project.frontmatter.category === isActive ? (
                   <motion.div
-                    key={index}
                     initial={{ opacity: 0, y: 20 }}
                     animate={{
                       opacity: 1,

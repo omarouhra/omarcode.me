@@ -16,7 +16,7 @@ function CustomLink({ title, link, icon, important, big, newTab }) {
           {title}
         </a>
       ) : (
-        <a title={title} target={newTab ? "_blank" : "_self"}>
+        <a  target={newTab ? "_blank" : "_self"}>
           {icon}
         </a>
       )}

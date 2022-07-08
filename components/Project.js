@@ -1,6 +1,6 @@
 import CustomImage from "./CustomImage";
-import CustomLink from "./CustomLink";
-import Link from "next/Link";
+
+import Link from "next/link";
 
 function Project({ image, imageAlt, title, description, link, soon, role }) {
   return (
@@ -20,7 +20,6 @@ function Project({ image, imageAlt, title, description, link, soon, role }) {
         <p className='text-sm  text-gray-500 mt-4 max-w-xs	'>{description}</p>
         {soon && <span className='text-xs text-blue-500'>{role}</span>}
 
-        {/* <CustomLink title='VIEW PROJECT' link={link} /> */}
       </a>
     </Link>
   );
