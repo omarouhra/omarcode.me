@@ -239,7 +239,12 @@ export default function Home({ projects }) {
                       imageAlt={project.frontmatter.title}
                       title={project.frontmatter.title}
                       description={project.frontmatter.description}
-                      link={ project.frontmatter.soon ? project.frontmatter.live : `/${project.slug}` }
+                      link={
+                        project.frontmatter.soon
+                          ? project.frontmatter.live
+                          : `/${project.slug}`
+                      }
+                      role={project.frontmatter.role}
                       soon={project.frontmatter.soon ? true : false}
                     />
                   </motion.div>
