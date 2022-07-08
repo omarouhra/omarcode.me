@@ -50,8 +50,8 @@ function aboutMe() {
                 className='object-contain '
               />
             </div>
-            <div className='lg:w-2/3 lg: mr-12'>
-              <p className=' text-sm  mt-4 leading-normal md:leading-loose  md:text-base  text-gray-700 font-normal text-justify '>
+            <div className='lg:w-2/3 lg:mr-12'>
+              <p className=' text-sm  mt-4 leading-normal md:leading-loose  md:text-base  text-gray-700 font-normal  '>
                 Hello! If you're wondering who's the person behind this work,
                 then this section is made for you! Let me just tell you that I
                 am exactly like you at this point, I am always curious about

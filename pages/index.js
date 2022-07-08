@@ -33,7 +33,6 @@ export default function Home({ projects }) {
     },
   });
 
-  console.log(isPlayAudio);
   return (
     <motion.div
       initial={{ opacity: 0 }}
@@ -106,8 +105,8 @@ export default function Home({ projects }) {
         </section>
 
         {/* status section */}
-        <section className='flex flex-col lg:space-y-0 lg:flex-row lg:justify-start  '>
-          <div className='w-1/3'>
+        <section className='flex flex-col  lg:flex-row lg:justify-start space-y-8 lg:space-y-0  '>
+          <div className='lg:w-1/3 '>
             <p className='statusTitle'>
               <RoughNotation
                 type='box'
@@ -117,14 +116,14 @@ export default function Home({ projects }) {
                 CURRENTLY{" "}
               </RoughNotation>
             </p>
-            <p className='text-sm'>
+            <p className='text-sm '>
               Front End Engineer <br /> at{" "}
               <span className='font-extrabold text-orange animate-pulse'>
                 Obytes
               </span>
             </p>
           </div>
-          <div className='w-1/3'>
+          <div className='lg:w-1/3 '>
             <p className='statusTitle'>
               <RoughNotation
                 type='box'
@@ -138,7 +137,7 @@ export default function Home({ projects }) {
               Finishing my last year of software enginnering.
             </p>
           </div>
-          <div className='w-1/3'>
+          <div className='lg:w-1/3 '>
             <p className='statusTitle'>
               <RoughNotation
                 type='box'
@@ -240,7 +239,7 @@ export default function Home({ projects }) {
                       imageAlt={project.frontmatter.title}
                       title={project.frontmatter.title}
                       description={project.frontmatter.description}
-                      link={`/${project.slug}`}
+                      link={ project.frontmatter.soon ? project.frontmatter.live : `/${project.slug}` }
                       soon={project.frontmatter.soon ? true : false}
                     />
                   </motion.div>
