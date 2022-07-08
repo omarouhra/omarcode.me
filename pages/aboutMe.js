@@ -3,9 +3,9 @@ import NavBar from "../components/NavBar";
 import Head from "next/head";
 import { motion } from "framer-motion";
 import CustomLink from "../components/CustomLink";
-import { RoughNotation } from "react-rough-notation";x
+import { RoughNotation } from "react-rough-notation";
 import CustomImage from "../components/CustomImage";
-import HeroImage from "../public/images/aboutMe.webp";
+import HeroImage from "../public/images/aboutMe.png";
 
 function aboutMe() {
   const transition = { duration: 0.7, ease: [0.4, 0.13, 0.23, 0.9] };
