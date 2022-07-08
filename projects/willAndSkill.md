@@ -5,7 +5,7 @@ description: "A Digital Agency in Stockhoml."
 paragraph: "...."
 cover: "/images/projects/project-3.webp"
 preview: ""
-role: "UI/UX desinger & front end developer"
+role: "UI/UX desinger"
 live: "https://www.willandskill.se/en"
 repo: "/"
 soon: true
