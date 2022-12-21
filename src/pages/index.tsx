@@ -1,11 +1,7 @@
-import type { NextPage } from 'next'
-import Head from 'next/head'
-import Image from 'next/image'
+import type { NextPage } from "next";
 
 const Home: NextPage = () => {
-  return (
-    <div>Omar code</div>
-  )
-}
+  return <div className="text-2xl text-white">Omar code</div>;
+};
 
-export default Home
+export default Home;
