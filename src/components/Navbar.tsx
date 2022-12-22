@@ -11,7 +11,8 @@ function Navbar() {
       <div className="flex items-center justify-between py-12 px-5 md:py-20 xl:px-0">
         <LogoIcon />
 
-        <div className="space-x-5 uppercase">
+              <div className="space-x-5 
+        ">
           <Link
             href="/"
             className={` ${
