@@ -5,7 +5,7 @@ type TMaxWidth = {
 };
 
 function MaxWidth({ children }: TMaxWidth) {
-  return <div className="mx-auto max-w-5xl">{children}</div>;
+  return <div className="mx-auto max-w-4xl">{children}</div>;
 }
 
 export default MaxWidth;
