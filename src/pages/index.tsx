@@ -1,4 +1,6 @@
+import Container from "@/components/Container";
 import Hero from "@/components/Hero";
+import Title from "@/components/Title";
 
 import type { NextPage } from "next";
 import { PROJECTS } from "@/data/projects";
@@ -7,10 +9,9 @@ import CustomImage from "@/components/CustomImage";
 
 const Home: NextPage = () => {
   return (
-    <div>
+    <MaxWidth>
       <Hero />
-
-      <MaxWidth>
+      <div>
         {PROJECTS.map((project, index) => (
           <div
             key={index}
@@ -28,8 +29,8 @@ const Home: NextPage = () => {
             </div>
           </div>
         ))}
-      </MaxWidth>
-    </div>
+      </div>
+    </MaxWidth>
   );
 };
 

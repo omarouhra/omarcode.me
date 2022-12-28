@@ -28,7 +28,7 @@ function Hero() {
             <h2 className="text-2xl font-extralight  md:text-4xl duration-300">
               A{" "}
               {
-                <div className="inline-block  text-center ">
+                <div className="inline-block  text-center mx-1 ">
                   {title == 0 && (
                     <p className="animate-fade-in-up">{TITLES[title]}</p>
                   )}

@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "framer-motion": "^8.0.1",
     "next": "13.0.7",
     "next-themes": "^0.2.1",
     "prettier-plugin-tailwindcss": "^0.2.1",

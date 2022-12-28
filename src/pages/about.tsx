@@ -1,9 +1,14 @@
-import React from 'react'
+import AnimateContainer from "@/components/AnimateContainer";
+import MaxWidth from "@/components/MaxWidth";
+import { motion } from "framer-motion";
+import React from "react";
 
 function about() {
   return (
-    <div></div>
-  )
+    <MaxWidth>
+      <p>About</p>
+    </MaxWidth>
+  );
 }
 
-export default about
+export default about;
