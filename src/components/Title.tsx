@@ -10,7 +10,7 @@ type TTitle = {
 function Title({ title, label, href }: TTitle) {
   return (
     <div>
-      <p className="text-2xl md:text-3xl mb-3">{title}</p>
+      <p className="text-xl md:text-2xl mb-3">{title}</p>
       {href && (
         <Link
           className=" dark:text-brand_gray/60 dark:hover:text-white duration-200 text-sm md:text-base"

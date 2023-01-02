@@ -11,7 +11,7 @@ function MyApp({ Component, pageProps }: AppProps) {
   const { pathname } = useRouter();
   return (
     <ThemeProvider defaultTheme="system" attribute="class">
-      <div className="h-screen w-full bg-white dark:bg-gradient-to-r  dark:from-brand_purple_dark  dark:to-brand_purple">
+      <div className="h-full w-full bg-white dark:bg-gradient-to-r  dark:from-brand_purple_dark  dark:to-brand_purple">
         <Navbar />
         <AnimatePresence mode="wait">
           <AnimateContainer key={pathname}>
