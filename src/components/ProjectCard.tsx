@@ -36,7 +36,7 @@ function ProjectCard({
       </div>
       <div
         className={`md: relative h-[200px] w-full rounded-md ${
-          fullwidth ? "md:w-[450px]" : "h-[200px] w-[400px]"
+          fullwidth ? "md:w-[450px]" : "h-[200px] w-full md:max-w-[400px]"
         }`}
       >
         <CustomImage imgSrc={image} alt={title} className='rounded-md' />
