@@ -23,7 +23,7 @@ function ProjectCard({
       className={`  flex flex-col items-start justify-start space-y-8 rounded-md py-10 px-4 md:py-20 md:px-6 ${color}  ${
         fullwidth
           ? "$ mb-12  mt-12 bg-gradient-to-r  md:flex-row md:items-center md:justify-between "
-          : "bg-gradient-to-b py-20 px-6 md:w-1/2"
+          : "bg-gradient-to-b  md:w-1/2"
       }
       `}
     >
