@@ -5,15 +5,18 @@ type TTitle = {
   title: string;
   label?: string;
   href?: string;
+  blank?: boolean;
 };
 
-function Title({ title, label, href }: TTitle) {
+function Title({ title, label, href, blank }: TTitle) {
   return (
     <div>
-      <p className="text-xl md:text-2xl mb-3">{title}</p>
+      <p className="mb-3 text-xl md:text-2xl">{title}</p>
       {href && (
         <Link
-          className=" dark:text-brand_gray/60 dark:hover:text-white duration-200 text-sm md:text-base"
+          target={blank ? "_blank" : "_parent"}
+          rel="noopener noreferrer"
+          className=" text-sm duration-200 dark:text-brand_gray/60 dark:hover:text-white md:text-base"
           href={href}
         >
           {label}
