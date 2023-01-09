@@ -3,6 +3,7 @@ import type { NextPage } from "next";
 import MaxWidth from "@/components/MaxWidth";
 import Projects from "@/components/Projects";
 import Youtube from "@/components/Youtube";
+import Footer from "@/components/Footer";
 
 const Home: NextPage = () => {
   return (
@@ -10,6 +11,7 @@ const Home: NextPage = () => {
       <Hero />
       <Projects />
       <Youtube />
+      <Footer />
     </MaxWidth>
   );
 };

@@ -9,9 +9,9 @@ function Navbar() {
   const { pathname } = useRouter();
 
   const LINKS = [
-    { label: "Home", href: "/" },
-    { label: "Work", href: "/work" },
-    { label: "About", href: "/about" },
+    { label: "GitHub", href: "https://github.com/omarouhra" },
+    { label: "Linkedin", href: "https://www.linkedin.com/in/omar-ouhra" },
+    { label: "Youtube", href: "https://www.youtube.com/@omarouhra" },
   ];
 
   return (
@@ -24,16 +24,27 @@ function Navbar() {
         "
         >
           {LINKS?.map((link, index) => (
+            // <Link
+            //   key={index}
+            //   href={link.href}
+            //   className={` ${
+            //     pathname === link.href
+            //       ? "dark:text-white"
+            //       : "text-brand_gray dark:text-brand_gray/40 dark:hover:text-white "
+            //   }  text-sm duration-200 md:text-base`}
+            // >
+            //   {link.label}
+            // </Link>
             <Link
               key={index}
               href={link.href}
-              className={` ${
-                pathname === link.href
-                  ? "dark:text-white"
-                  : "text-brand_gray dark:text-brand_gray/40 dark:hover:text-white "
-              }  text-sm duration-200 md:text-base`}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-sm duration-200  md:text-base"
             >
-              {link.label}
+              <span className="text-gray-400 hover:text-black">
+                {link.label}
+              </span>
             </Link>
           ))}
         </div>
