@@ -16,7 +16,7 @@ function Title({ title, label, href, blank }: TTitle) {
         <Link
           target={blank ? "_blank" : "_parent"}
           rel="noopener noreferrer"
-          className="font-light text-sm text-gray-600 duration-200 dark:text-brand_gray/60 dark:hover:text-white md:text-base"
+          className="inline-block text-sm font-light text-gray-600 duration-200 dark:text-brand_gray/60 dark:hover:text-white md:text-base"
           href={href}
         >
           <p className="duration-300 hover:translate-x-1">{label}</p>

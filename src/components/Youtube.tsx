@@ -59,7 +59,9 @@ function Youtube() {
               </div>
               <p>{title}</p>
             </div>
-            <span className="text-gray-400 group-hover:text-black">{time}</span>
+            <span className="text-gray-400 group-hover:text-black dark:group-hover:text-white">
+              {time}
+            </span>
           </Link>
         ))}
       </div>
