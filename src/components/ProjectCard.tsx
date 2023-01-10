@@ -1,4 +1,6 @@
+import GithubIcon from "@/icons/GithubIcon";
 import { StaticImageData } from "next/image";
+import Link from "next/link";
 import React from "react";
 import CustomImage from "./CustomImage";
 
@@ -20,26 +22,46 @@ function ProjectCard({
 }: TProject) {
   return (
     <div
-      className={`  flex flex-col items-start justify-start space-y-8 rounded-md py-10 px-4 md:py-20 md:px-6 ${color}  ${
+      className={` group flex flex-col items-start justify-start space-y-8 rounded-md px-4 duration-300  md:px-6   ${color}  ${
         fullwidth
-          ? "$ mb-12  mt-12 bg-gradient-to-r  md:flex-row md:items-center md:justify-between "
-          : "bg-gradient-to-b  md:w-1/2"
+          ? "$ mb-12 mt-12 bg-gradient-to-r pt-10 md:flex-row  md:items-center md:justify-between md:py-20 "
+          : "bg-gradient-to-b  pt-10 md:w-1/2 md:pt-20"
       }
       `}
     >
       <div>
-        <h2 className="text-xl text-white md:text-2xl">{title}</h2>
-        <p className="mb-8 text-xs font-extralight text-[#D9D9D9]">{role}</p>
-        <p className="max-w-[300px] text-xs font-extralight text-[#D9D9D9]">
-          {description}
-        </p>
+        <h2 className="mb-1 text-xl text-white md:text-2xl">{title}</h2>
+        <p className="mb-8 text-sm font-light text-[#b8b8b8]">{role}</p>
+        <p className="max-w-[300px] text-sm text-[#D9D9D9]">{description}</p>
+
+        <div className="mt-8 flex  items-center  space-x-3 duration-200 ">
+          <Link
+            href="/"
+            className="rounded-md bg-purple-700 px-5  py-3 group-hover:shadow-lg "
+          >
+            View site
+          </Link>
+          <Link
+            href="/"
+            className=" flex items-center justify-between space-x-3 rounded-md  px-5 py-3 hover:text-blue-400"
+          >
+            <GithubIcon />
+          </Link>
+        </div>
       </div>
+
       <div
-        className={`md: relative h-[200px] w-full rounded-md ${
-          fullwidth ? "md:w-[450px]" : "h-[200px] w-full md:max-w-[400px]"
+        className={`md: relative mx-auto h-[250px] w-full max-w-[500px] md:h-[200px] md:w-full ${
+          fullwidth ? "md:w-[450px]" : "h-[200px] w-full"
         }`}
       >
-        <CustomImage imgSrc={image} alt={title} className="rounded-md" />
+        <CustomImage
+          imgSrc={image}
+          alt={title}
+          className={` ${
+            fullwidth ? "rounded-t-md md:rounded-md" : "rounded-t-md"
+          }`}
+        />
       </div>
     </div>
   );
